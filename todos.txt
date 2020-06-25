@@ -1,0 +1,15 @@
+IN DEVELOPMENT
+
+
+TODO: Figure out Imaging using ID's for unique pokemon
+TODO: Add either JS or Bootstrap to make it look better. 
+TODO: Add more TODO's 
+
+
+
+DONE
+
+TODO: Create another file to host all Pokemon Structs
+TODO: Format Structs to look decent when on the Pokedex page
+TODO: Add to Pokemon Structs(Species, Height, Weight, Region, etc)
+TODO: Start on the View single pokemon page
