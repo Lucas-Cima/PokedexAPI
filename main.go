@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"centene/pokedex/routes"
+	"github.com/Lucas-Cima/PokedexAPI/routes"
 )
 //MAIN FUNCTION
 func main() {
