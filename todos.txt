@@ -1,6 +1,7 @@
 IN DEVELOPMENT
 
-
+TODO: Integrate Angular into API for a frontend
+TODO: Integrate MongoDB for a DB functionality in place of structs
 TODO: Figure out Imaging using ID's for unique pokemon
 TODO: Add either JS or Bootstrap to make it look better. 
 TODO: Add more TODO's 
