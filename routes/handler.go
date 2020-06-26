@@ -2,15 +2,13 @@ package routes
 
 import (
 	"fmt"
+	"html/template"
 	"log"
 	"net/http"
-	"html/template"
-	//"math/rand"
-	//"time"
 
+	"github.com/sirupsen/logrus"
+	"github.com/Lucas-Cima/PokedexAPI/model"
 	"github.com/gorilla/mux"
-
-	"centene/pokedex/model"
 )
 //VARIABLES
 
@@ -34,7 +32,6 @@ func returnFullPokedex(w http.ResponseWriter, r *http.Request) {
 	tmpl.Execute(w, pokedex)
 }
 
-//SINGLE POKEMON HANDLER
 func returnSinglePokemon(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: Single Pokemon")
 	tmpl := template.Must(template.ParseFiles("templates/pokemon.html"))
@@ -43,7 +40,9 @@ func returnSinglePokemon(w http.ResponseWriter, r *http.Request) {
 
 	for _, pokemon := range pokedex {
 		if pokemon.Id == key {
-			tmpl.Execute(w, pokemon)
+			if err := tmpl.Execute(w, pokemon); err != nil {
+				logrus.Error(err)
+			}
 		}
 	}
 }
