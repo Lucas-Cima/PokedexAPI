@@ -67,8 +67,16 @@ func returnRandomPokemon(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+//Who's that Pokemon!?
 func whoIsDat(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: Who Dat!?")
+	tmpl := template.Must(template.ParseFiles("templates/whodat.html"))
+	rand.Seed(time.Now().UnixNano())
+	randomIndex := rand.Intn(len(pokedex) - 1)
+	pokemon := pokedex[randomIndex]
+	if err := tmpl.Execute(w, pokemon); err != nil {
+		logrus.Error(err)
+	}
 }
 
 //Handle Requests..

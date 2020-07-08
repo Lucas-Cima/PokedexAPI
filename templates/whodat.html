@@ -9,42 +9,7 @@
             <a href="/whodat">Who's That Pokemon</a>
       </nav>
 </header>
-    <center><h1>{{.Name}}</h1></center>
-        {{if .SecElement}}
-        <div class="Heading">
-            <span class="Id">{{.Id}}</span>. 
-            <span class="Name">{{.Name}}</span>: The 
-            <span class="Species">{{.Species}}</span>. From the Region of 
-            <span class="Region">{{.Region}}</span>.
-        </div>
-        <div class="Specs">
-            <span class="Height">{{.Height}}</span> tall and weighs 
-            <span class="Weight">{{.Weight}}</span>.
-            <span class="Typing">
-                <span class="Element">{{.Element}}</span> type and 
-                <span class="SecElement">{{.SecElement}}</span> type.
-            </span>
-        </div>
-
-        <div class="PkdxText">
-            <div class="PkdxEntry">{{.PkdxEntry}}</div>
-        </div>
-        {{else}}
-        <div class="Heading">
-                <span class="Id">{{.Id}}</span>. 
-                <span class="Name">{{.Name}}</span>: The 
-                <span class="Species">{{.Species}}</span>. From the Region of 
-                <span class="Region">{{.Region}}</span>.
-            </div>
-            <div class="Specs">
-                <span class="Height">{{.Height}}</span> tall and weighs
-                <span class="Weight">{{.Weight}}</span>.
-                <span class="Typing">
-                    <span class="Element">{{.Element}}</span> type.
-                </span>
-            </div>
-            <div class="PkdxText">
-                <div class="PkdxEntry">{{.PkdxEntry}}</div>
-            </div>
-        {{end}}
+    <div class="Title">
+        <center><h1>{{.PkdxEntry}}</h1></center>
+    </div>
 </html>
