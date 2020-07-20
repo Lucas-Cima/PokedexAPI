@@ -1,6 +1,7 @@
 package routes
 
 import (
+	"context"
 	"fmt"
 	"html/template"
 	"log"
@@ -11,6 +12,10 @@ import (
 	"github.com/Lucas-Cima/PokedexAPI/model"
 	"github.com/gorilla/mux"
 	"github.com/sirupsen/logrus"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
+
+	//	"centene/pokedex/mongo"
 )
 
 //VARIABLES
@@ -33,8 +38,23 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 //POKEDEX HANDLER
 func returnFullPokedex(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endoint Hit: Full Pokedex")
+
+	clientOptions := options.Client().ApplyURI("mongodb+srv://Lucas:pokemon@pokedex.l4iml.mongodb.net/Pokedex?retryWrites=true&w=majority")
+
+	// Connect to MongoDB
+	client, err := mongo.Connect(context.TODO(), clientOptions)
+	if err != nil {
+		log.Fatal(err)
+	}
+	// Check the connection
+	err = client.Ping(context.TODO(), nil)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	collection := client.Database("Pokedex").Collection("Pokemon")
 	tmpl := template.Must(template.ParseFiles("templates/pokedex.html", "static/stylesheet.css"))
-	if err := tmpl.Execute(w, pokedex); err != nil {
+	if err := tmpl.Execute(w, collection); err != nil {
 		logrus.Error(err)
 	}
 }

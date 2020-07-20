@@ -1,0 +1,1671 @@
+{
+    "_id": "001", 
+    "Name": "Bulbasaur", 
+    "Element": "Grass", 
+    "SecElement": "Poison", 
+    "Height": "0.7 m", 
+    "Weight": "6.9 kg", 
+    "Species": "Seed Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon."
+}
+{
+    "_id": "002", 
+    "Name": "Ivysaur", 
+    "Element": "Grass", 
+    "SecElement": "Poison", 
+    "Height": "1.0 m", 
+    "Weight": "13.0 kg", 
+    "Species": "Seed Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs."
+}
+{
+    "_id": "003", 
+    "Name": "Venusaur", 
+    "Element": "Grass", 
+    "SecElement": "Poison", 
+    "Height": "2.0 m", 
+    "Weight": "100.0 kg", 
+    "Species": "Seed Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight."
+}
+{
+    "_id": "004", 
+    "Name": "Charmander", 
+    "Element": "Fire", 
+    "SecElement": "", 
+    "Height": "0.6 m", 
+    "Weight": "8.5 kg", 
+    "Species": "Lizard Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail."
+}
+{
+    "_id": "005", 
+    "Name": "Charmeleon", 
+    "Element": "Fire", 
+    "SecElement": "", 
+    "Height": "1.1 m", 
+    "Weight": "19.0 kg", 
+    "Species": "Flame Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "When it swings its burning tail, it elevates the temperature to unbearably high levels."
+}
+{
+    "_id": "006", 
+    "Name": "Charizard", 
+    "Element": "Fire", 
+    "SecElement": "Flying", 
+    "Height": "1.7 m", 
+    "Weight": "90.5 kg", 
+    "Species": "Flame Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally."
+}
+{
+    "_id": "007", 
+    "Name": "Squirtle", 
+    "Element": "Water", 
+    "SecElement": "", "Height": "0.5 m", 
+    "Weight": "9.0 kg", 
+    "Species": "Tiny Turtle Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth."
+}
+{
+    "_id": "008", 
+    "Name": "Wartortle", 
+    "Element": "Water", 
+    "SecElement": "", 
+    "Height": "1.0 m", 
+    "Weight": "22.5 kg", 
+    "Species": "Turtle Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance."
+}
+{
+    "_id": "009", 
+    "Name": "Blastoise", 
+    "Element": "Water", 
+    "SecElement": "", 
+    "Height": "1.6 m", 
+    "Weight": "85.5 kg", 
+    "Species": "Shellfish Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "A brutal POKéMON with pressurized water jets on its shell. They are used for high speed tackles."
+}
+{
+    "_id": "010", 
+    "Name": "Caterpie", 
+    "Element": "Bug", 
+    "SecElement": "", 
+    "Height": "0.3 m", 
+    "Weight": "2.9 kg", 
+    "Species": "Worm Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls."
+}
+{
+    "_id": "011", 
+    "Name": "Metapod", 
+    "Element": "Bug", 
+    "SecElement": "", 
+    "Height": "0.7 m", 
+    "Weight": "9.9 kg", 
+    "Species": "Cocoon Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "This POKéMON is vulnerable to attack while its shell is soft, exposing its weak and tender body."
+}
+{
+    "_id": "012", 
+    "Name": "Butterfree", 
+    "Element": "Bug", 
+    "SecElement": "Flying", 
+    "Height": "1.1 m", 
+    "Weight": "32.0 kg", 
+    "Species": "Butterfly Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "In battle, it flaps its wings at high speed to release highly toxic dust into the air."
+}
+{
+    "_id": "013", 
+    "Name": "Weedle", 
+    "Element": "Bug", 
+    "SecElement": "", 
+    "Height": "0.3 m", 
+    "Weight": "3.2 kg", 
+    "Species": "Hairy Bug Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Often found in forests, eating leaves. It has a sharp venomous stinger on its head."
+}
+{
+    "_id": "014",
+    "Name": "Kakuna", 
+    "Element": "Bug", 
+    "SecElement": "", 
+    "Height": "0.6 m", 
+    "Weight": "10.0 kg", 
+    "Species": "Cocoon Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Almost incapable of moving, this POKéMON can only harden its shell to protect itself from predators."
+}
+{
+    "_id": "015", 
+    "Name": "Beedrill", 
+    "Element": "Bug", 
+    "SecElement": "Poison", 
+    "Height": "1.0 m", 
+    "Weight": "29.5 kg", 
+    "Species": "Poison Bee Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Flies at high speed and attacks using its large venomous stingers on its forelegs and tail."
+}
+{
+    "_id": "016", 
+    "Name": "Pidgey", 
+    "Element": "Normal", 
+    "SecElement": "Flying", 
+    "Height": "0.3 m", 
+    "Weight": "1.8 kg", 
+    "Species": "Tiny Bird Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand."
+}
+{
+    "_id": "017", 
+    "Name": "Pidgeotto", 
+    "Element": "Normal", 
+    "SecElement": "Flying", 
+    "Height": "1.1 m", 
+    "Weight": "30.0 kg", 
+    "Species": "Bird Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Very protective of its sprawling territorial area, this POKéMON will fiercely peck at any intruder."
+}
+{
+    "_id": "018", 
+    "Name": "Pidgeot", 
+    "Element": "Normal", 
+    "SecElement": "Flying", 
+    "Height": "1.5 m", 
+    "Weight": "39.5 kg", 
+    "Species": "Bird Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP."
+}
+{
+    "_id": "019", 
+    "Name": "Rattata", 
+    "Element": "Normal", 
+    "SecElement": "", 
+    "Height": "0.3 m", 
+    "Weight": "3.5 kg", 
+    "Species": "Mouse Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Bites anything when it attacks. Small and very quick, it is a common sight in many places."
+}
+{
+    "_id": "020", 
+    "Name": "Ratcate", 
+    "Element": "Normal", 
+    "SecElement": "", 
+    "Height": "0.7 m", 
+    "Weight": "18.5 kg", 
+    "Species": "Mouse Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "It uses its whiskers to maintain its balance. It apparently slows down if they are cut off."
+}
+{
+    "_id": "021", 
+    "Name": "Spearow", 
+    "Element": "Normal", 
+    "SecElement": "Flying", 
+    "Height": "0.3 m", 
+    "Weight": "2.0 kg", 
+    "Species": "Tiny Bird Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Eats bugs in grassy areas. It has to flap its short wings at high speed to stay airborne."
+}
+{
+    "_id": "022", 
+    "Name": "Fearow", 
+    "Element": "Normal", 
+    "SecElement": "Flying", 
+    "Height": "1.2 m", 
+    "Weight": "38.0 kg", 
+    "Species": "Beak Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest."
+}
+{
+    "_id": "023", 
+    "Name": "Ekans", 
+    "Element": "Poison", 
+    "SecElement": "", 
+    "Height": "2.0 m", 
+    "Weight": "6.9 kg", 
+    "Species": "Snake Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole."
+}
+{
+    "_id": "024", 
+    "Name": "Arbok", 
+    "Element": "Poison", 
+    "SecElement": "", 
+    "Height": "3.5 m", 
+    "Weight": "65.0 kg", 
+    "Species": "Cobra Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "It is rumored that the ferocious warning markings on its belly differ from area to area."
+}
+{
+    "_id": "025", 
+    "Name": "Pikachu", 
+    "Element": "Electric", 
+    "SecElement": "", 
+    "Height": "0.4 m", 
+    "Weight": "6.0 kg", 
+    "Species": "Mouse Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "When several of these POKéMON gather, their electricity could build and cause lightning storms."
+}
+{
+    "_id": "026", 
+    "Name": "Raichu", 
+    "Element": "Electric", 
+    "SecElement": "", 
+    "Height": "0.8 m", 
+    "Weight": "30.0 kg", 
+    "Species": "Mouse Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Its long tail serves as a ground to protect itself from its own high voltage power."
+}
+{
+    "_id": "027", 
+    "Name": "Sandshrew", 
+    "Element": "Ground", 
+    "SecElement": "", 
+    "Height": "0.6 m", 
+    "Weight": "12.0 kg", 
+    "Species": "Mouse Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food."
+}
+{
+    "_id": "028", 
+    "Name": "Sandslash", 
+    "Element": "Ground", 
+    "SecElement": "", 
+    "Height": "1.0 m", 
+    "Weight": "29.5 kg", 
+    "Species": "Mouse Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape."
+}
+{
+    "_id": "029", 
+    "Name": "Nidoran♀", 
+    "Element": "Poison", 
+    "SecElement": "", 
+    "Height": "0.4 m", 
+    "Weight": "7.0 kg", 
+    "Species": "Poison Pin Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Although small, its venomous barbs render this POKéMON dangerous. The female has smaller horns."
+}
+{
+    "_id": "030", 
+    "Name": "Nidorina", 
+    "Element": "Poison", 
+    "SecElement": "", 
+    "Height": "0.8 m", 
+    "Weight": "20.0 kg", 
+    "Species": "Poison Pin Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "The female’s horn develops slowly. Prefers physical attacks such as clawing and biting."
+}
+{
+    "_id": "031", 
+    "Name": "Nidoqueen", 
+    "Element": "Poison", 
+    "SecElement": "Ground", 
+    "Height": "1.3 m", 
+    "Weight": "60.0 kg", 
+    "Species": "Drill Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves."
+}
+{
+    "_id": "032", 
+    "Name": "Nidoran♂", 
+    "Element": "Poison", 
+    "SecElement": "", 
+    "Height": "0.5 m", 
+    "Weight": "9.0 kg", 
+    "Species": "Poison Pin Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Stiffens its ears to sense danger. The larger its horns, the more powerful its secreted venom."
+}
+{
+    "_id": "033", 
+    "Name": "Nidorino", 
+    "Element": "Poison", 
+    "SecElement": "", 
+    "Height": "0.9 m", 
+    "Weight": "19.5 kg", 
+    "Species": "Poison Pin Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "An aggressive POKéMON that is quick to attack. The horn on its head secretes a powerful venom."
+}
+{
+    "_id": "034", 
+    "Name": "Nidoking", 
+    "Element": "Poison", 
+    "SecElement": "Ground", 
+    "Height": "1.4 m", 
+    "Weight": "62.0 kg", 
+    "Species": "Drill Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "It uses its powerful tail in battle to smash, constrict, then break the prey’s bones."
+}
+{
+    "_id": "035", 
+    "Name": "Clefairy", 
+    "Element": "Fairy", 
+    "SecElement": "", 
+    "Height": "0.6 m", 
+    "Weight": "7.5 kg", 
+    "Species": "Fairy Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas."
+}
+{
+    "_id": "036", 
+    "Name": "Clefable", 
+    "Element": "Fairy", 
+    "SecElement": "", 
+    "Height": "1.3 m", 
+    "Weight": "40.0 kg", 
+    "Species": "Fairy Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "A timid fairy POKéMON that is rarely seen. It will run and hide the moment it senses people."
+}
+{
+    "_id": "037", 
+    "Name": "Vulpix", 
+    "Element": "Fire", 
+    "SecElement": "", 
+    "Height": "0.6 m", 
+    "Weight": "9.9 kg", 
+    "Species": "Fox Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "At the time of birth, it has just one tail. The tail splits from its tip as it grows older."
+}
+{
+    "_id": "038", 
+    "Name": "Ninetails", 
+    "Element": "Fire", 
+    "SecElement": "", 
+    "Height": "1.1 m", 
+    "Weight": "19.9 kg", 
+    "Species": "Fox Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse."
+}
+{
+    "_id": "039", 
+    "Name": "Jigglypuff", 
+    "Element": "Normal", 
+    "SecElement": "Fairy", 
+    "Height": "0.5 m", 
+    "Weight": "5.5 kg", 
+    "Species": "Balloon Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep."
+}
+{
+    "_id": "040", 
+    "Name": "Wigglytuff", 
+    "Element": "Normal", 
+    "SecElement": "Fairy", 
+    "Height": "1.0 m", 
+    "Weight": "12.0 kg", 
+    "Species": "Balloon Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size."
+}
+{
+    "_id": "041", 
+    "Name": "Zubat", 
+    "Element": "Poison", 
+    "SecElement": "Flying", 
+    "Height": "0.8 m", 
+    "Weight": "7.5 kg", 
+    "Species": "Bat Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets."
+}
+{
+    "_id": "042", 
+    "Name": "Golbat", 
+    "Element": "Poison", 
+    "SecElement": "Flying", 
+    "Height": "1.6 m", 
+    "Weight": "55.0 kg", 
+    "Species": "Bat Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly."
+}
+{
+    "_id": "043", 
+    "Name": "Oddish", 
+    "Element": "Grass", 
+    "SecElement": "Poison", 
+    "Height": "0.5 m", 
+    "Weight": "5.4 kg", 
+    "Species": "Weed Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds."
+}
+{
+    "_id": "044", 
+    "Name": "Gloom", 
+    "Element": "Grass", 
+    "SecElement": "Poison", 
+    "Height": "0.8 m", 
+    "Weight": "8.6 kg", 
+    "Species": "Weed Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "The fluid that oozes from its mouth isn’t drool. It is a nectar that is used to attract prey."
+}
+{
+    "_id": "045", 
+    "Name": "Vileplume", 
+    "Element": "Grass", 
+    "SecElement": "Poison", 
+    "Height": "1.2 m", 
+    "Weight": "18.6 kg", 
+    "Species": "Flower Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up."
+}
+{
+    "_id": "046", 
+    "Name": "Paras", 
+    "Element": "Bug", 
+    "SecElement": "Grass", 
+    "Height": "0.3 m", 
+    "Weight": "5.4 kg", 
+    "Species": "Mushroom Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Burrows to suck tree roots. The mushrooms on its back grow by drawing nutrients from the bug host."
+}
+{
+    "_id": "047", 
+    "Name": "Parasect", 
+    "Element": "Bug", 
+    "SecElement": "Grass", 
+    "Height": "1.0 m", 
+    "Weight": "29.5 kg", 
+    "Species": "Mushroom Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places."
+}
+{
+    "_id": "048", 
+    "Name": "Venonat", 
+    "Element": "Bug", 
+    "SecElement": "Poison", 
+    "Height": "1.0 m", 
+    "Weight": "30.0 kg", 
+    "Species": "Insect Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Lives in the shadows of tall trees where it eats insects. It is attracted by light at night."
+}
+{
+    "_id": "049", 
+    "Name": "Venomoth", 
+    "Element": "Bug", 
+    "SecElement": "Poison", 
+    "Height": "1.5 m", 
+    "Weight": "12.5 kg", 
+    "Species": "Poison Moth Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "The dust-like scales covering its wings are color coded to indicate the kinds of poison it has."
+}
+{
+    "_id": "050", 
+    "Name": "Diglett", 
+    "Element": "Ground", 
+    "SecElement": "", 
+    "Height": "0.2 m", 
+    "Weight": "0.8 kg", 
+    "Species": "Mole Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Lives about one yard underground where it feeds on plant roots. It sometimes appears above ground."
+}
+{
+    "_id": "051", 
+    "Name": "Dugtrio", 
+    "Element": "Ground", 
+    "SecElement": "", 
+    "Height": "0.7 m", 
+    "Weight": "33.3 kg", 
+    "Species": "Mole Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "A team of DIGLETT triplets. It triggers huge earthquakes by burrowing 60 miles underground."
+}
+{
+    "_id": "052", 
+    "Name": "Meowth", 
+    "Element": "Normal", 
+    "SecElement": "", 
+    "Height": "0.4 m", 
+    "Weight": "4.2 kg", 
+    "Species": "Scratch Cat Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Adores circular objects. Wanders the streets on a nightly basis to look for dropped loose change."
+}
+{
+    "_id": "053", 
+    "Name": "Persian", 
+    "Element": "Normal", 
+    "SecElement": "", 
+    "Height": "1.0 m", 
+    "Weight": "32.0 kg", 
+    "Species": "Classy Cat Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness."
+}
+{
+    "_id": "054", 
+    "Name": "Psyduck", 
+    "Element": "Water", 
+    "SecElement": "", 
+    "Height": "0.8 m", 
+    "Weight": "19.6 kg", 
+    "Species": "Duck Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "While lulling its enemies with its vacant look, this wily POKéMON will use psychokinetic powers."
+}
+{
+    "_id": "055", 
+    "Name": "Golduck", 
+    "Element": "Water", 
+    "SecElement": "", 
+    "Height": "0.8 m", 
+    "Weight": "19.6 kg", 
+    "Species": "Duck Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Often seen swimming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa."
+}
+{
+    "_id": "056", 
+    "Name": "Mankey", 
+    "Element": "Fighting", 
+    "SecElement": "", 
+    "Height": "0.5 m", 
+    "Weight": "28.0 kg", 
+    "Species": "Pig Monkey Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Extremely quick to anger. It could be docile one moment then thrashing away the next instant."
+}
+{
+    "_id": "057", 
+    "Name": "Primeape", 
+    "Element": "Fighting", 
+    "SecElement": "", 
+    "Height": "1.0 m", 
+    "Weight": "32.0 kg", 
+    "Species": "Pig Monkey Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught."
+}
+{
+    "_id": "058", 
+    "Name": "Growlithe", 
+    "Element": "Fire", 
+    "SecElement": "", 
+    "Height": "0.7 m", 
+    "Weight": "19.0 kg", 
+    "Species": "Puppy Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Very protective of its territory. It will bark and bite to repel intruders from its space."
+}
+{
+    "_id": "059", 
+    "Name": "Arcanine", 
+    "Element": "Fire", 
+    "SecElement": "", 
+    "Height": "1.9 m", 
+    "Weight": "155.0 kg", 
+    "Species": "Legendary Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "A POKéMON that has been admired since the past for its beauty. It runs agilely as if on wings."
+}
+{
+    "_id": "060", 
+    "Name": "Poliwag", 
+    "Element": "Water", 
+    "SecElement": "", 
+    "Height": "0.6 m", 
+    "Weight": "12.4 kg", 
+    "Species": "Tadpole Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand."
+}
+{
+    "_id": "061", 
+    "Name": "Poliwhirl", 
+    "Element": "Water", 
+    "SecElement": "", 
+    "Height": "1.0 m", 
+    "Weight": "20.0 kg", 
+    "Species": "Tadpole Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Capable of living in or out of water. When out of water, it sweats to keep its body slimy."
+}
+{
+    "_id": "062", 
+    "Name": "Poliwrath", 
+    "Element": "Water", 
+    "SecElement": "", 
+    "Height": "1.3 m", 
+    "Weight": "54.0 kg", 
+    "Species": "Tadpole Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers."
+}
+{
+    "_id": "063", 
+    "Name": "Abra", 
+    "Element": "Psychic", 
+    "SecElement": "", 
+    "Height": "0.9 m", 
+    "Weight": "19.5 kg", 
+    "Species": "Psi Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Using its ability to read minds, it will identify impending danger and TELEPORT to safety."
+}
+{
+    "_id": "064", 
+    "Name": "Kadabra", 
+    "Element": "Psychic", 
+    "SecElement": "", 
+    "Height": "1.3 m", 
+    "Weight": "56.5 kg", 
+    "Species": "Psi Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "It emits special alpha waves from its body that induce headaches just by being close by."
+}
+{
+    "_id": "065", 
+    "Name": "Alakazam", 
+    "Element": "Psychic", 
+    "SecElement": "", 
+    "Height": "1.5 m", 
+    "Weight": "48.0 kg", 
+    "Species": "Psi Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Its brain can outperform a supercomputer. Its intelligence quotient is said to be 5,000."
+}
+{
+    "_id": "066", 
+    "Name": "Machop", 
+    "Element": "Fighting", 
+    "SecElement": "", 
+    "Height": "0.8 m", 
+    "Weight": "19.5 kg", 
+    "Species": "Superpower Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger."
+}
+{
+    "_id": "067", 
+    "Name": "Machoke", 
+    "Element": "Fighting", 
+    "SecElement": "", 
+    "Height": "1.5 m", 
+    "Weight": "70.5 kg", 
+    "Species": "Superpower Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Its muscular body is so powerful, it must wear a power save belt to be able to regulate its motions."
+}
+{
+    "_id": "068", 
+    "Name": "Machamp", 
+    "Element": "Fighting", 
+    "SecElement": "", 
+    "Height": "1.6 m", 
+    "Weight": "130.0 kg", 
+    "Species": "Superpower Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon."
+}
+{
+    "_id": "069", 
+    "Name": "Bellsprout", 
+    "Element": "Grass", 
+    "SecElement": "Poison", 
+    "Height": "0.7 m", 
+    "Weight": "4.0 kg", 
+    "Species": "Flower Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "A carnivorous POKéMON that traps and eats bugs. It uses its root feet to soak up needed moisture."
+}
+{
+    "_id": "070", 
+    "Name": "Weepinbell", 
+    "Element": "Grass", 
+    "SecElement": "Poison", 
+    "Height": "1.0 m", 
+    "Weight": "6.4 kg", 
+    "Species": "Flycatcher Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "It spits out POISONPOWDER to immobilize the enemy and then finishes it with a spray of ACID."
+}
+{
+    "_id": "071", 
+    "Name": "Victreebel", 
+    "Element": "Grass", 
+    "SecElement": "Poison", 
+    "Height": "1.7 m", 
+    "Weight": "15.5 kg", 
+    "Species": "Flycatcher Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Said to live in huge colonies deep in jungles, although no one has ever returned from there."
+}
+{
+    "_id": "072", 
+    "Name": "Tentacool", 
+    "Element": "Water", 
+    "SecElement": "Poison", 
+    "Height": "0.9 m", 
+    "Weight": "45.5 kg", 
+    "Species": "Jellyfish Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid."
+}
+{
+    "_id": "073", 
+    "Name": "Tentacruel", 
+    "Element": "Water", 
+    "SecElement": "Poison", 
+    "Height": "1.6 m", 
+    "Weight": "55.0 kg", 
+    "Species": "Jellyfish Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey."
+}
+{
+    "_id": "074", 
+    "Name": "Geodude", 
+    "Element": "Rock", 
+    "SecElement": "Ground", 
+    "Height": "0.4 m", 
+    "Weight": "20.0 kg", 
+    "Species": "Rock Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them."
+}
+{
+    "_id": "075", 
+    "Name": "Graveler", 
+    "Element": "Rock", 
+    "SecElement": "Ground", 
+    "Height": "1.0 m", 
+    "Weight": "105.0 kg", 
+    "Species": "Rock Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction."
+}
+{
+    "_id": "076", 
+    "Name": "Golem", 
+    "Element": "Rock", 
+    "SecElement": "Ground", 
+    "Height": "1.4 m", 
+    "Weight": "300.0 kg", 
+    "Species": "Rock Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage."
+}
+{
+    "_id": "077", 
+    "Name": "Ponyta", 
+    "Element": "Fire", 
+    "SecElement": "", 
+    "Height": "1.0 m", 
+    "Weight": "30.0 kg", 
+    "Species": "Fire Horse Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Its hooves are 10 times harder than diamonds. It can trample anything completely flat in little time."
+}
+{
+    "_id": "078", 
+    "Name": "Rapidash", 
+    "Element": "Fire", 
+    "SecElement": "", 
+    "Height": "1.7 m", 
+    "Weight": "95.0 kg", 
+    "Species": "Fire Horse Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Very competitive, this POKéMON will chase anything that moves fast in the hopes of racing it."
+}
+{
+    "_id": "079", 
+    "Name": "Slowpoke", 
+    "Element": "Water", 
+    "SecElement": "Psychic", 
+    "Height": "1.2 m", 
+    "Weight": "36.0 kg", 
+    "Species": "Dopey Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack."
+}
+{
+    "_id": "080", 
+    "Name": "Slowbro", 
+    "Element": "Water", 
+    "SecElement": "Psychic", 
+    "Height": "1.6 m", 
+    "Weight": "78.5 kg", 
+    "Species": "Hermit Crab Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "The SHELLDER that is latched onto SLOWPOKE’s tail is said to feed on the host’s left over scraps."
+}
+{
+    "_id": "081", 
+    "Name": "Magnemite", 
+    "Element": "Electric", 
+    "SecElement": "Steel", 
+    "Height": "0.3 m", 
+    "Weight": "6.0 kg", 
+    "Species": "Magnet Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Uses anti-gravity to stay suspended. Appears without warning and uses THUNDER WAVE and similar moves."
+}
+{
+    "_id": "082", 
+    "Name": "Magneton", 
+    "Element": "Electric", 
+    "SecElement": "Steel", 
+    "Height": "1.0 m", 
+    "Weight": "60.0 kg", 
+    "Species": "Magnet Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Formed by several MAGNEMITEs linked together. They frequently appear when sunspots flare up."
+}
+{
+    "_id": "083", 
+    "Name": "Farfetch'd", 
+    "Element": "Normal", 
+    "SecElement": "Flying", 
+    "Height": "0.8 m", 
+    "Weight": "15.0 kg", 
+    "Species": "Wild Duck Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "The sprig of green onions it holds is its weapon. It is used much like a metal sword."
+}
+{
+    "_id": "084", 
+    "Name": "Doduo", 
+    "Element": "Normal", 
+    "SecElement": "Flying", 
+    "Height": "1.4 m", 
+    "Weight": "39.2 kg", 
+    "Species": "Twin Bird Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints."
+}
+{
+    "_id": "085", 
+    "Name": "Dodrio", 
+    "Element": "Normal", 
+    "SecElement": "Flying", 
+    "Height": "1.8 m", 
+    "Weight": "85.2 kg", 
+    "Species": "Triple Bird Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake."
+}
+{
+    "_id": "086", 
+    "Name": "Seel", 
+    "Element": "Water", 
+    "SecElement": "", 
+    "Height": "1.8 m", 
+    "Weight": "85.2 kg", 
+    "Species": "Sea Lion Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "The protruding horn on its head is very hard. It is used for bashing through thick ice."
+}
+{
+    "_id": "087", 
+    "Name": "Dewgong", 
+    "Element": "Water", 
+    "SecElement": "Ice", 
+    "Height": "1.7 m", 
+    "Weight": "120.0 kg", 
+    "Species": "Sea Lion Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters."
+}
+{
+    "_id": "088", 
+    "Name": "Grimer", 
+    "Element": "Poison", 
+    "SecElement": "", 
+    "Height": "0.9 m", 
+    "Weight": "30.0 kg", 
+    "Species": "Sludge Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories."
+}
+{
+    "_id": "089", 
+    "Name": "Muk", 
+    "Element": "Poison", 
+    "SecElement": "", 
+    "Height": "1.2 m", 
+    "Weight": "30.0 kg", 
+    "Species": "Sludge Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison."
+}
+{
+    "_id": "090", 
+    "Name": "Shellder", 
+    "Element": "Water", 
+    "SecElement": "", 
+    "Height": "1.2 m", 
+    "Weight": "30.0 kg", 
+    "Species": "Bivalve Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Its hard shell repels any kind of attack. It is vulnerable only when its shell is open."
+}
+{
+    "_id": "091", 
+    "Name": "Cloyster", 
+    "Element": "Water", 
+    "SecElement": "Ice", 
+    "Height": "1.5 m", 
+    "Weight": "132.5 kg", 
+    "Species": "Bivalve Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "When attacked, it launches its horns in quick volleys. Its innards have never been seen."
+}
+{
+    "_id": "092", 
+    "Name": "Gastly", 
+    "Element": "Ghost", 
+    "SecElement": "Poison", 
+    "Height": "1.3 m", 
+    "Weight": "0.1 kg", 
+    "Species": "Gas Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Almost invisible, this gaseous POKéMON cloaks the target and puts it to sleep without notice."
+}
+{
+    "_id": "093", 
+    "Name": "Haunter", 
+    "Element": "Ghost", 
+    "SecElement": "Poison", 
+    "Height": "1.6 m", 
+    "Weight": "0.1 kg", 
+    "Species": "Gas Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Because of its ability to slip through block walls, it is said to be from another dimension."
+}
+{
+    "_id": "094", 
+    "Name": "Gengar", 
+    "Element": "Ghost", 
+    "SecElement": "Poison", 
+    "Height": "1.5 m", 
+    "Weight": "40.5 kg", 
+    "Species": "Shadow Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Under a full moon, this POKéMON likes to mimic the shadows of people and laugh at their fright."
+}
+{
+    "_id": "095", 
+    "Name": "Onix", 
+    "Element": "Rock", 
+    "SecElement": "Ground", 
+    "Height": "8.8 m", 
+    "Weight": "210.0 kg", 
+    "Species": "Rock Snake Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "As it grows, the stone portions of its body harden to become similar to a diamond, but colored black."
+}
+{
+    "_id": "096", 
+    "Name": "Drowzee", 
+    "Element": "Psychic", 
+    "SecElement": "", 
+    "Height": "1.0 m", 
+    "Weight": "32.4 kg", 
+    "Species": "Hypnosis Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Puts enemies to sleep then eats their dreams. Occasionally gets sick from eating bad dreams."
+}
+{
+    "_id": "097", 
+    "Name": "Hypno", 
+    "Element": "Psychic", 
+    "SecElement": "", 
+    "Height": "1.6 m", 
+    "Weight": "75.6 kg", 
+    "Species": "Hypnosis Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "When it locks eyes with an enemy, it will use a mix of PSI moves such as HYPNOSIS and CONFUSION."
+}
+{
+    "_id": "098", 
+    "Name": "Krabby", 
+    "Element": "Water", 
+    "SecElement": "", 
+    "Height": "0.4 m", 
+    "Weight": "6.5 kg", 
+    "Species": "River Crab Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Its pincers are not only powerful weapons, they are used for balance when walking sideways."
+}
+{
+    "_id": "099", 
+    "Name": "Kingler", 
+    "Element": "Water", 
+    "SecElement": "", 
+    "Height": "1.3 m", 
+    "Weight": "60.0 kg", 
+    "Species": "Pincer Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use."
+}
+{
+    "_id": "100", 
+    "Name": "Voltorb", 
+    "Element": "Electric", 
+    "SecElement": "", 
+    "Height": "0.5 m", 
+    "Weight": "10.4 kg", 
+    "Species": "Ball Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Usually found in power plants. Easily mistaken for a POKé BALL, they have zapped many people."
+}
+{
+    "_id": "101", 
+    "Name": "Electrode", 
+    "Element": "Electric", 
+    "SecElement": "", 
+    "Height": "1.2 m", 
+    "Weight": "66.6 kg", 
+    "Species": "Ball Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "It stores electric energy under very high pressure. It often explodes with little or no provocation."
+}
+{
+    "_id": "102", 
+    "Name": "Exeggcute", 
+    "Element": "Grass", 
+    "SecElement": "Psychic", 
+    "Height": "0.4 m", 
+    "Weight": "2.5 kg", 
+    "Species": "Egg Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms."
+}
+{
+    "_id": "103", 
+    "Name": "Exeggutor", 
+    "Element": "Grass", 
+    "SecElement": "Psychic", 
+    "Height": "2.0 m", 
+    "Weight": "120.0 kg", 
+    "Species": "Coconut Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Legend has it that on rare occasions, one of its heads will drop off and continue on as an EXEGGCUTE."
+}
+{
+    "_id": "104", 
+    "Name": "Cubone", 
+    "Element": "Ground", 
+    "SecElement": "", 
+    "Height": "0.4 m", 
+    "Weight": "6.5 kg", 
+    "Species": "Lonely Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Because it never removes its skull helmet, no one has ever seen this POKéMON’s real face."
+}
+{
+    "_id": "105", 
+    "Name": "Marowak", 
+    "Element": "Ground", 
+    "SecElement": "", 
+    "Height": "1.0 m", 
+    "Weight": "45.0 kg", 
+    "Species": "Bone Keeper Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets."
+}
+{
+    "_id": "106", 
+    "Name": "Hitmonlee", 
+    "Element": "Fighting", 
+    "SecElement": "", 
+    "Height": "1.5 m", 
+    "Weight": "49.8 kg", 
+    "Species": "Kicking Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "When in a hurry, its legs lengthen progressively. It runs smoothly with extra long, loping strides."
+}
+{
+    "_id": "107", 
+    "Name": "Hitmonchan", 
+    "Element": "Fighting", 
+    "SecElement": "", 
+    "Height": "1.4 m", 
+    "Weight": "50.2 kg", 
+    "Species": "Punching Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see."
+}
+{
+    "_id": "108", 
+    "Name": "Lickitung", 
+    "Element": "Normal", 
+    "SecElement": "", 
+    "Height": "1.2 m", 
+    "Weight": "65.5 kg", 
+    "Species": "Licking Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Its tongue can be extended like a chameleon’s. It leaves a tingling sensation when it licks enemies."
+}
+{
+    "_id": "109", 
+    "Name": "Koffing", 
+    "Element": "Poison", 
+    "SecElement": "", 
+    "Height": "0.6 m", 
+    "Weight": "1.0 kg", 
+    "Species": "Poison Gas Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning."
+}
+{
+    "_id": "110", 
+    "Name": "Weezing", 
+    "Element": "Poison", 
+    "SecElement": "", 
+    "Height": "1.2 m", 
+    "Weight": "9.5 kg", 
+    "Species": "Poison Gas Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Where two kinds of poison gases meet, 2 KOFFINGs can fuse into a WEEZING over many years."
+}
+{
+    "_id": "111", 
+    "Name": "Rhyhorn", 
+    "Element": "Ground", 
+    "SecElement": "Rock", 
+    "Height": "1.0 m", 
+    "Weight": "115.0 kg", 
+    "Species": "Spikes Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Its massive bones are 1000 times harder than human bones. It can easily knock a trailer flying."
+}
+{
+    "_id": "112", 
+    "Name": "Rhydon", 
+    "Element": "Ground", 
+    "SecElement": "Rock", 
+    "Height": "1.9 m", 
+    "Weight": "120.0 kg", 
+    "Species": "Drill Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees."
+}
+{
+    "_id": "113", 
+    "Name": "Chansey", 
+    "Element": "Normal", 
+    "SecElement": "", 
+    "Height": "1.1 m", 
+    "Weight": "34.6 kg", 
+    "Species": "Egg Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "A rare and elusive POKéMON that is said to bring happiness to those who manage to get it."
+}
+{
+    "_id": "114", 
+    "Name": "Tangela", 
+    "Element": "Grass", 
+    "SecElement": "", 
+    "Height": "1.0 m", 
+    "Weight": "35.0 kg", 
+    "Species": "Vine Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "The whole body is swathed with wide vines that are similar to seaweed. Its vines shake as it walks."
+}
+{
+    "_id": "115", 
+    "Name": "Kangaskhan", 
+    "Element": "Normal", 
+    "SecElement": "", 
+    "Height": "2.2 m", 
+    "Weight": "80.0 kg", 
+    "Species": "Parent Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "The infant rarely ventures out of its mother’s protective pouch until it is 3 years old."
+}
+{
+    "_id": "116", 
+    "Name": "Horsea", 
+    "Element": "Water", 
+    "SecElement": "", 
+    "Height": "0.4 m", 
+    "Weight": "8.0 kg", 
+    "Species": "Dragon Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Known to shoot down flying bugs with precision blasts of ink from the surface of the water."
+}
+{
+    "_id": "117", 
+    "Name": "Seadra", 
+    "Element": "Water", 
+    "SecElement": "", 
+    "Height": "1.2 m", 
+    "Weight": "25.0 kg", 
+    "Species": "Dragon Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Capable of swimming backwards by rapidly flapping its wing-like pectoral fins and stout tail."
+}
+{
+    "_id": "118", 
+    "Name": "Goldeen", 
+    "Element": "Water", 
+    "SecElement": "", 
+    "Height": "0.6 m", 
+    "Weight": "15.0 kg", 
+    "Species": "Goldfish Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Its tail fin billows like an elegant ballroom dress, giving it the nickname of the Water Queen."
+}
+{
+    "_id": "119", 
+    "Name": "Seaking", 
+    "Element": "Water", 
+    "SecElement": "", 
+    "Height": "1.3 m", 
+    "Weight": "39.0 kg", 
+    "Species": "Goldfish Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "In the autumn spawning season, they can be seen swimming powerfully up rivers and creeks."
+}
+{
+    "_id": "120", 
+    "Name": "Staryu", 
+    "Element": "Water", 
+    "SecElement": "", 
+    "Height": "0.8 m", 
+    "Weight": "34.5 kg", 
+    "Species": "Star Shape Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "An enigmatic POKéMON that can effortlessly regenerate any appendage it loses in battle."
+}
+{
+    "_id": "121", 
+    "Name": "Starmie", 
+    "Element": "Water", 
+    "SecElement": "Psychic", 
+    "Height": "1.1 m", 
+    "Weight": "80.0 kg", 
+    "Species": "Mysterious Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem."
+}
+{
+    "_id": "122", 
+    "Name": "Mr. Mime", 
+    "Element": "Psychic", 
+    "SecElement": "", 
+    "Height": "1.3 m", 
+    "Weight": "54.5 kg", 
+    "Species": "Barrier Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "If interrupted while it is miming, it will slap around the offender with its broad hands."
+}
+{
+    "_id": "123", 
+    "Name": "Scyther", 
+    "Element": "Bug", 
+    "SecElement": "Flying", 
+    "Height": "1.5 m", 
+    "Weight": "56.0 kg", 
+    "Species": "Mantis Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "With ninja-like agility and speed, it can create the illusion that there is more than one."
+}
+{
+    "_id": "124", 
+    "Name": "Jynx", 
+    "Element": "Ice", 
+    "SecElement": "Psychic", 
+    "Height": "1.4 m", 
+    "Weight": "40.6 kg", 
+    "Species": "Human Shape Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "It seductively wiggles its hips as it walks. It can cause people to dance in unison with it."
+}
+{
+    "_id": "125", 
+    "Name": "Electabuzz", 
+    "Element": "Electric", 
+    "SecElement": "", 
+    "Height": "1.1 m", 
+    "Weight": "30.0 kg", 
+    "Species": "Electric Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Normally found near power plants, they can wander away and cause major blackouts in cities."
+}
+{
+    "_id": "126", 
+    "Name": "Magmar", 
+    "Element": "Fire", 
+    "SecElement": "", 
+    "Height": "1.3 m", 
+    "Weight": "44.5 kg", 
+    "Species": "Spitfire Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Its body always burns with an orange glow that enables it to hide perfectly among flames."
+}
+{
+    "_id": "127", 
+    "Name": "Pinsir", 
+    "Element": "Bug", 
+    "SecElement": "", 
+    "Height": "1.5 m", 
+    "Weight": "55.0 kg", 
+    "Species": "Stag Beetle Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "If it fails to crush the victim in its pincers, it will swing it around and toss it hard."
+}
+{
+    "_id": "128", 
+    "Name": "Tauros", 
+    "Element": "Normal", 
+    "SecElement": "", 
+    "Height": "1.4 m", 
+    "Weight": "88.4 kg", 
+    "Species": "Wild Bull Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "When it targets an enemy, it charges furiously while whipping its body with its long tails."
+}
+{
+    "_id": "129", 
+    "Name": "Magikarp", 
+    "Element": "Water", 
+    "SecElement": "", 
+    "Height": "0.9 m", 
+    "Weight": "10.0 kg", 
+    "Species": "Fish Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today."
+}
+{
+    "_id": "130", 
+    "Name": "Gyarados", 
+    "Element": "Water", 
+    "SecElement": "Flying", 
+    "Height": "6.5 m", 
+    "Weight": "235.0 kg", 
+    "Species": "Atrocious Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Rarely seen in the wild. Huge and vicious, it is capable of destroying entire cities in a rage."
+}
+{
+    "_id": "131", 
+    "Name": "Lapras", 
+    "Element": "Water", 
+    "SecElement": "Ice", 
+    "Height": "2.5 m", 
+    "Weight": "220.0 kg", 
+    "Species": "Transport Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "A POKéMON that has been overhunted almost to extinction. It can ferry people across the water."
+}
+{
+    "_id": "132", 
+    "Name": "Ditto", 
+    "Element": "Normal", 
+    "SecElement": "", 
+    "Height": "0.3 m", 
+    "Weight": "4.0 kg", 
+    "Species": "Transform Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Capable of copying an enemy’s genetic code to instantly transform itself into a duplicate of the enemy."
+}
+{
+    "_id": "133", 
+    "Name": "Eevee", 
+    "Element": "Normal", 
+    "SecElement": "", 
+    "Height": "0.3 m", 
+    "Weight": "4.8 kg", 
+    "Species": "Evolution Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs."
+}
+{
+    "_id": "134", 
+    "Name": "Vaporeon", 
+    "Element": "Water", 
+    "SecElement": "", 
+    "Height": "1.0 m", 
+    "Weight": "29.0 kg", 
+    "Species": "Bubble Jet Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid’s."
+}
+{
+    "_id": "135", 
+    "Name": "Jolteon", 
+    "Element": "Electric", 
+    "SecElement": "", 
+    "Height": "0.8 m", 
+    "Weight": "24.5 kg", 
+    "Species": "Lightning Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "It accumulates negative ions in the atmosphere to blast out 10000-volt lightning bolts."
+}
+{
+    "_id": "136", 
+    "Name": "Flareon", 
+    "Element": "Fire", 
+    "SecElement": "", 
+    "Height": "0.9 m", 
+    "Weight": "25.0 kg", 
+    "Species": "Flame Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees."
+}
+{
+    "_id": "137", 
+    "Name": "Porygon", 
+    "Element": "Normal", 
+    "SecElement": "", 
+    "Height": "0.8 m", 
+    "Weight": "36.5 kg", 
+    "Species": "Virtual Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "A POKéMON that consists entirely of programming code. Capable of moving freely in cyberspace."
+}
+{
+    "_id": "138", 
+    "Name": "Omanyte", 
+    "Element": "Rock", 
+    "SecElement": "Water", 
+    "Height": "0.4 m", 
+    "Weight": "7.5 kg", 
+    "Species": "Spiral Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Although long extinct, in rare cases, it can be genetically resurrected from fossils."
+}
+{
+    "_id": "139", 
+    "Name": "Omastar", 
+    "Element": "Rock", 
+    "SecElement": "Water", 
+    "Height": "1.0 m", 
+    "Weight": "35.0 kg", 
+    "Species": "Spiral Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "A prehistoric POKéMON that died out when its heavy shell made it impossible to catch prey."
+}
+{
+    "_id": "140", 
+    "Name": "Kabuto", 
+    "Element": "Rock", 
+    "SecElement": "Water", 
+    "Height": "0.5 m", 
+    "Weight": "11.5 kg", 
+    "Species": "Shellfish Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "A POKéMON that was resurrected from a fossil found in what was once the ocean floor eons ago."
+}
+{
+    "_id": "141", 
+    "Name": "Kabutops", 
+    "Element": "Rock", 
+    "SecElement": "Water", 
+    "Height": "1.3 m", 
+    "Weight": "40.5 kg", 
+    "Species": "Shellfish Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Its sleek shape is perfect for swimming. It slashes prey with its claws and drains the body fluids."
+}
+{
+    "_id": "142", 
+    "Name": "Aerodactyl", 
+    "Element": "Rock", 
+    "SecElement": "Flying", 
+    "Height": "1.8 m", 
+    "Weight": "59.0 kg", 
+    "Species": "Fossil Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "A ferocious, prehistoric POKéMON that goes for the enemy’s throat with its serrated saw-like fangs."
+}
+{
+    "_id": "143", 
+    "Name": "Snorlax", 
+    "Element": "Normal", 
+    "SecElement": "", 
+    "Height": "2.1 m", 
+    "Weight": "460.0 kg", 
+    "Species": "Sleeping Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful."
+}
+{
+    "_id": "144", 
+    "Name": "Articuno", 
+    "Element": "Ice", 
+    "SecElement": "Flying", 
+    "Height": "1.7 m", 
+    "Weight": "55.4 kg", 
+    "Species": "Freeze Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "A legendary bird POKéMON that is said to appear to doomed people who are lost in icy mountains."
+}
+{
+    "_id": "145", 
+    "Name": "Zapdos", 
+    "Element": "Electric", 
+    "SecElement": "Flying", 
+    "Height": "1.6 m", 
+    "Weight": "52.6 kg", 
+    "Species": "Elecric Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "A legendary bird POKéMON that is said to appear from clouds while dropping enormous lightning bolts."
+}
+{
+    "_id": "146", 
+    "Name": "Moltres", 
+    "Element": "Fire", 
+    "SecElement": "Flying", 
+    "Height": "2.0 m", 
+    "Weight": "60.0 kg", 
+    "Species": "Flame Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames."
+}
+{
+    "_id": "147", 
+    "Name": "Dratini", 
+    "Element": "Dragon", 
+    "SecElement": "", 
+    "Height": "1.8 m", 
+    "Weight": "3.3 kg", 
+    "Species": "Dragon Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "Long considered a mythical POKéMON until recently when a small colony was found living underwater."
+}
+{
+    "_id": "148", 
+    "Name": "Dragonair", 
+    "Element": "Dragon", 
+    "SecElement": "", 
+    "Height": "4.0 m", 
+    "Weight": "16.5 kg", 
+    "Species": "Dragon Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "A mystical POKéMON that exudes a gentle aura. Has the ability to change climate conditions."
+}
+{
+    "_id": "149", 
+    "Name": "Dragonite", 
+    "Element": "Dragon", 
+    "SecElement": "Flying", 
+    "Height": "2.2 m", 
+    "Weight": "210.0 kg", 
+    "Species": "Dragon Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "An extremely rarely seen marine POKéMON. Its intelligence is said to match that of humans."
+}
+{
+    "_id": "149", 
+    "Name": "Dragonite", 
+    "Element": "Dragon", 
+    "SecElement": "Flying", 
+    "Height": "2.2 m", 
+    "Weight": "210.0 kg", 
+    "Species": "Dragon Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "An extremely rarely seen marine POKéMON. Its intelligence is said to match that of humans."
+}
+{
+    "_id": "150", 
+    "Name": "Mewtwo", 
+    "Element": "Psychic", 
+    "SecElement": "", 
+    "Height": "2.0 m", 
+    "Weight": "122.0 kg", 
+    "Species": "Genetic Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments."
+}
+{
+    "_id": "151", 
+    "Name": "Mew", 
+    "Element": "Psychic", 
+    "SecElement": "", 
+    "Height": "0.4 m", 
+    "Weight": "4.0 kg", 
+    "Species": "New Species Pokémon", 
+    "Region": "Kanto", 
+    "PkdxEntry": "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide."
+}

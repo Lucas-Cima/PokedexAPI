@@ -14,8 +14,8 @@
         {{range .}}
             {{if .SecElement}}
             <div class="Heading">
-                <span class="Id">{{.Id}}</span>. 
-                <span class="Name"><a href="/pokemon/{{.Id}}">{{.Name}}</span></a>: The 
+                <span class="_id">{{._id}}</span>. 
+                <span class="Name"><a href="/pokemon/{{._id}}">{{.Name}}</span></a>: The 
                 <span class="Species">{{.Species}}</span>. From the Region of 
                 <span class="Region">{{.Region}}</span>.
             </div>
@@ -32,8 +32,8 @@
             </div>
             {{else}}
             <div class="Heading">
-                <span class="Id">{{.Id}}</span>. 
-                <span class="Name"><a href="/pokemon/{{.Id}}">{{.Name}}</span></a>: The 
+                <span class="_id">{{._id}}</span>. 
+                <span class="Name"><a href="/pokemon/{{._id}}">{{.Name}}</span></a>: The 
                 <span class="Species">{{.Species}}</span>. From the Region of 
                 <span class="Region">{{.Region}}</span>.
             </div>
