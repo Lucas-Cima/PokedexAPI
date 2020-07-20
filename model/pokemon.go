@@ -1,13 +1,13 @@
 package model
 
 type Pokemon struct {
-	Id         string `bson:"Id"`
-	Name       string `bson:"Name"`
-	Element    string `bson:"Element"`
-	SecElement string `bson:"SecElement,omitempty"`
-	Height     string `bson:"Height"`
-	Weight     string `bson:"Weight"`
-	Species    string `bson:"Species"`
-	Region     string `bson:"Region"`
-	PkdxEntry  string `bson:"PkdxEntry"`
+	Id         string `json:"_id"`
+	Name       string `json:"Name"`
+	Element    string `json:"Element"`
+	SecElement string `json:"SecElement,omitempty"`
+	Height     string `json:"Height"`
+	Weight     string `json:"Weight"`
+	Species    string `json:"Species"`
+	Region     string `json:"Region"`
+	PkdxEntry  string `json:"PkdxEntry"`
 }
