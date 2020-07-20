@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	//	"centene/pokedex/mongo"
-	"centene/pokedex/routes"
+	"github.com/Lucas-Cima/PokedexAPI/routes"
 )
 
 //MAIN FUNCTION
