@@ -3,8 +3,9 @@ package main
 import (
 	"fmt"
 
-	//	"centene/pokedex/mongo"
 	"github.com/Lucas-Cima/PokedexAPI/routes"
+
+	//	"centene/pokedex/mongo"
 )
 
 //MAIN FUNCTION
