@@ -61,7 +61,6 @@ func returnFullPokedex(w http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			log.Fatal(err)
 		}
-
 		allPokemon = append(allPokemon, pokemon)
 	}
 	defer func() {
@@ -70,6 +69,7 @@ func returnFullPokedex(w http.ResponseWriter, r *http.Request) {
 		}
 	}()
 
+	//Function Logic
 	tmpl := template.Must(template.ParseFiles("templates/pokedex.html"))
 	if err := tmpl.Execute(w, allPokemon); err != nil {
 		logrus.Error(err)
@@ -119,10 +119,10 @@ func returnSinglePokemon(w http.ResponseWriter, r *http.Request) {
 		}
 	}()
 
+	//Function Logic
 	tmpl := template.Must(template.ParseFiles("templates/pokemon.html"))
 	vars := mux.Vars(r)
 	key := vars["id"]
-
 	for _, pokemon := range allPokemon {
 		if pokemon.Id == key {
 			if err := tmpl.Execute(w, pokemon); err != nil {
@@ -174,7 +174,7 @@ func returnRandomPokemon(w http.ResponseWriter, r *http.Request) {
 			logrus.Error(err)
 		}
 	}()
-
+	//Function Logic
 	tmpl := template.Must(template.ParseFiles("templates/pokemon.html"))
 	rand.Seed(time.Now().UnixNano())
 	randomIndex := rand.Intn(len(allPokemon) - 1)
@@ -226,6 +226,7 @@ func whoIsDat(w http.ResponseWriter, r *http.Request) {
 			logrus.Error(err)
 		}
 	}()
+	//Function Logic
 
 	tmpl := template.Must(template.ParseFiles("templates/whodat.html"))
 	rand.Seed(time.Now().UnixNano())
@@ -239,10 +240,10 @@ func whoIsDat(w http.ResponseWriter, r *http.Request) {
 //Handle Requests..
 func HandleRequests() {
 	myRouter := mux.NewRouter().StrictSlash(true)
-	myRouter.HandleFunc("/", homePage)
+	myRouter.HandleFunc("/", homePage).Methods("GET")
 	myRouter.HandleFunc("/pokedex", returnFullPokedex).Methods("GET")
-	myRouter.HandleFunc("/pokemon/{id}", returnSinglePokemon)
-	myRouter.HandleFunc("/randpoke", returnRandomPokemon)
-	myRouter.HandleFunc("/whodat", whoIsDat)
+	myRouter.HandleFunc("/pokemon/{id}", returnSinglePokemon).Methods("GET")
+	myRouter.HandleFunc("/randpoke", returnRandomPokemon).Methods("GET")
+	myRouter.HandleFunc("/whodat", whoIsDat).Methods("GET")
 	log.Fatal(http.ListenAndServe(":8082", myRouter))
 }

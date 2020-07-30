@@ -1,6 +1,6 @@
 IN DEVELOPMENT:
 
-TODO: Integrate MongoDB for a DB functionality in place of structs
+TODO: Add Easy, Meduim, and Hard mode to WhoDat!?
 TODO: Add more TODO's 
 
 
@@ -25,3 +25,4 @@ TODO: Create another file to host all Pokemon Structs
 TODO: Format Structs to look decent when on the Pokedex page
 TODO: Add to Pokemon Structs(Species, Height, Weight, Region, etc)
 TODO: Start on the View single pokemon page
+TODO: Integrate MongoDB for a DB functionality in place of structs
