@@ -7,6 +7,7 @@ import (
 	"log"
 	"math/rand"
 	"net/http"
+	"strconv"
 	"time"
 
 	"github.com/Lucas-Cima/PokedexAPI/model"
@@ -14,8 +15,46 @@ import (
 	"github.com/sirupsen/logrus"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
 )
+
+var (
+	MongoDb mongo.Collection
+)
+
+//Getting a random pokemon
+func getRandom(collection *mongo.Collection) (randPoke model.Pokemon) {
+	rand.Seed(time.Now().UnixNano())
+	randomIndex := rand.Intn(151)
+	i := strconv.Itoa(randomIndex)
+	if randomIndex < 100 && randomIndex >= 10 {
+		i = fmt.Sprintf("0%v", i)
+	} else if randomIndex < 10 {
+		i = fmt.Sprintf("00%v", i)
+	}
+	if err := collection.FindOne(context.Background(), bson.M{"_id": i}).Decode(&randPoke); err != nil {
+		logrus.Errorf("%v: index: %v", err, i)
+	}
+	return
+}
+
+//Getting Full Pokedex
+func getPokedex(collection *mongo.Collection) (pokedex []model.Pokemon) {
+	res, err := collection.Find(context.TODO(), bson.D{})
+	if err != nil {
+		logrus.Error(err)
+	}
+	for res.Next(context.TODO()) {
+
+		// create a value into which the single document can be decoded
+		var pokemon model.Pokemon
+		err := res.Decode(&pokemon)
+		if err != nil {
+			log.Fatal(err)
+		}
+		pokedex = append(pokedex, pokemon)
+	}
+	return
+}
 
 //LANDING PAGE HANDLER
 func homePage(w http.ResponseWriter, r *http.Request) {
@@ -27,159 +66,22 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-//POKEDEX HANDLER
-func returnFullPokedex(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("Endoint Hit: Full Pokedex")
-	findOptions := options.Find()
-	findOptions.SetLimit(151)
-
-	clientOptions := options.Client().ApplyURI("mongodb+srv://Lucas:pokemon@pokedex.l4iml.mongodb.net/Pokedex?retryWrites=true&w=majority")
-
-	// Connect to MongoDB
-	client, err := mongo.Connect(context.TODO(), clientOptions)
-	if err != nil {
-		log.Fatal(err)
-	}
-	// Check the connection
-	err = client.Ping(context.TODO(), nil)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	collection := client.Database("Pokedex").Collection("Pokemon")
-	var allPokemon []model.Pokemon
-	res, err := collection.Find(context.TODO(), bson.D{}, findOptions)
-	if err != nil {
-		logrus.Error(err)
-	}
-
-	for res.Next(context.TODO()) {
-
-		// create a value into which the single document can be decoded
-		var pokemon model.Pokemon
-		err := res.Decode(&pokemon)
-		if err != nil {
-			log.Fatal(err)
-		}
-		allPokemon = append(allPokemon, pokemon)
-	}
-	defer func() {
-		if err := res.Close(context.TODO()); err != nil {
-			logrus.Error(err)
-		}
-	}()
-
-	//Function Logic
-	tmpl := template.Must(template.ParseFiles("templates/pokedex.html"))
-	if err := tmpl.Execute(w, allPokemon); err != nil {
-		logrus.Error(err)
-	}
-}
-
-//SINGLE POKEMON
-func returnSinglePokemon(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("Endpoint Hit: Single Pokemon")
-	findOptions := options.Find()
-	findOptions.SetLimit(151)
-
-	clientOptions := options.Client().ApplyURI("mongodb+srv://Lucas:pokemon@pokedex.l4iml.mongodb.net/Pokedex?retryWrites=true&w=majority")
-
-	// Connect to MongoDB
-	client, err := mongo.Connect(context.TODO(), clientOptions)
-	if err != nil {
-		log.Fatal(err)
-	}
-	// Check the connection
-	err = client.Ping(context.TODO(), nil)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	collection := client.Database("Pokedex").Collection("Pokemon")
-	var allPokemon []model.Pokemon
-	res, err := collection.Find(context.TODO(), bson.D{}, findOptions)
-	if err != nil {
-		logrus.Error(err)
-	}
-
-	for res.Next(context.TODO()) {
-
-		// create a value into which the single document can be decoded
-		var pokemon model.Pokemon
-		err := res.Decode(&pokemon)
-		if err != nil {
-			log.Fatal(err)
-		}
-
-		allPokemon = append(allPokemon, pokemon)
-	}
-	defer func() {
-		if err := res.Close(context.TODO()); err != nil {
-			logrus.Error(err)
-		}
-	}()
-
-	//Function Logic
-	tmpl := template.Must(template.ParseFiles("templates/pokemon.html"))
-	vars := mux.Vars(r)
-	key := vars["id"]
-	for _, pokemon := range allPokemon {
-		if pokemon.Id == key {
-			if err := tmpl.Execute(w, pokemon); err != nil {
-				logrus.Error(err)
-			}
-		}
-	}
-}
-
 //RANDOM POKEMON
 func returnRandomPokemon(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: Random Pokemon")
-	findOptions := options.Find()
-	findOptions.SetLimit(151)
-
-	clientOptions := options.Client().ApplyURI("mongodb+srv://Lucas:pokemon@pokedex.l4iml.mongodb.net/Pokedex?retryWrites=true&w=majority")
-
-	// Connect to MongoDB
-	client, err := mongo.Connect(context.TODO(), clientOptions)
-	if err != nil {
-		log.Fatal(err)
-	}
-	// Check the connection
-	err = client.Ping(context.TODO(), nil)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	collection := client.Database("Pokedex").Collection("Pokemon")
-	var allPokemon []model.Pokemon
-	res, err := collection.Find(context.TODO(), bson.D{}, findOptions)
-	if err != nil {
+	tmpl := template.Must(template.ParseFiles("templates/pokemon.html"))
+	pokemon := getRandom(&MongoDb)
+	if err := tmpl.Execute(w, pokemon); err != nil {
 		logrus.Error(err)
 	}
+}
 
-	for res.Next(context.TODO()) {
-
-		// create a value into which the single document can be decoded
-		var pokemon model.Pokemon
-		err := res.Decode(&pokemon)
-		if err != nil {
-			log.Fatal(err)
-		}
-
-		allPokemon = append(allPokemon, pokemon)
-	}
-	defer func() {
-		if err := res.Close(context.TODO()); err != nil {
-			logrus.Error(err)
-		}
-	}()
-	//Function Logic
-	tmpl := template.Must(template.ParseFiles("templates/pokemon.html"))
-	rand.Seed(time.Now().UnixNano())
-	randomIndex := rand.Intn(len(allPokemon) - 1)
-	pokemon := allPokemon[randomIndex]
-	if err := tmpl.Execute(w, pokemon); err != nil {
+//POKEDEX HANDLER
+func returnFullPokedex(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Endoint Hit: Full Pokedex")
+	pokedex := getPokedex(&MongoDb)
+	tmpl := template.Must(template.ParseFiles("templates/pokedex.html"))
+	if err := tmpl.Execute(w, pokedex); err != nil {
 		logrus.Error(err)
 	}
 }
@@ -187,53 +89,26 @@ func returnRandomPokemon(w http.ResponseWriter, r *http.Request) {
 //Who's that Pokemon!?
 func whoIsDat(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: Who Dat!?")
-	findOptions := options.Find()
-	findOptions.SetLimit(151)
-
-	clientOptions := options.Client().ApplyURI("mongodb+srv://Lucas:pokemon@pokedex.l4iml.mongodb.net/Pokedex?retryWrites=true&w=majority")
-
-	// Connect to MongoDB
-	client, err := mongo.Connect(context.TODO(), clientOptions)
-	if err != nil {
-		log.Fatal(err)
-	}
-	// Check the connection
-	err = client.Ping(context.TODO(), nil)
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	collection := client.Database("Pokedex").Collection("Pokemon")
-	var allPokemon []model.Pokemon
-	res, err := collection.Find(context.TODO(), bson.D{}, findOptions)
-	if err != nil {
-		logrus.Error(err)
-	}
-
-	for res.Next(context.TODO()) {
-
-		// create a value into which the single document can be decoded
-		var pokemon model.Pokemon
-		err := res.Decode(&pokemon)
-		if err != nil {
-			log.Fatal(err)
-		}
-
-		allPokemon = append(allPokemon, pokemon)
-	}
-	defer func() {
-		if err := res.Close(context.TODO()); err != nil {
-			logrus.Error(err)
-		}
-	}()
-	//Function Logic
-
 	tmpl := template.Must(template.ParseFiles("templates/whodat.html"))
-	rand.Seed(time.Now().UnixNano())
-	randomIndex := rand.Intn(len(allPokemon) - 1)
-	pokemon := allPokemon[randomIndex]
+	pokemon := getRandom(&MongoDb)
 	if err := tmpl.Execute(w, pokemon); err != nil {
 		logrus.Error(err)
+	}
+}
+
+//SINGLE POKEMON
+func returnSinglePokemon(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Endpoint Hit: Single Pokemon")
+	tmpl := template.Must(template.ParseFiles("templates/pokemon.html"))
+	pokedex := getPokedex(&MongoDb)
+	vars := mux.Vars(r)
+	key := vars["id"]
+	for _, pokemon := range pokedex {
+		if pokemon.Id == key {
+			if err := tmpl.Execute(w, pokemon); err != nil {
+				logrus.Error(err)
+			}
+		}
 	}
 }
 
