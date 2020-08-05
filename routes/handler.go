@@ -66,32 +66,12 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-//RANDOM POKEMON
-func returnRandomPokemon(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("Endpoint Hit: Random Pokemon")
-	tmpl := template.Must(template.ParseFiles("templates/pokemon.html"))
-	pokemon := getRandom(&MongoDb)
-	if err := tmpl.Execute(w, pokemon); err != nil {
-		logrus.Error(err)
-	}
-}
-
 //POKEDEX HANDLER
 func returnFullPokedex(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endoint Hit: Full Pokedex")
-	pokedex := getPokedex(&MongoDb)
 	tmpl := template.Must(template.ParseFiles("templates/pokedex.html"))
+	pokedex := getPokedex(&MongoDb)
 	if err := tmpl.Execute(w, pokedex); err != nil {
-		logrus.Error(err)
-	}
-}
-
-//Who's that Pokemon!?
-func whoIsDat(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("Endpoint Hit: Who Dat!?")
-	tmpl := template.Must(template.ParseFiles("templates/whodat.html"))
-	pokemon := getRandom(&MongoDb)
-	if err := tmpl.Execute(w, pokemon); err != nil {
 		logrus.Error(err)
 	}
 }
@@ -112,13 +92,63 @@ func returnSinglePokemon(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+//RANDOM POKEMON
+func returnRandomPokemon(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Endpoint Hit: Random Pokemon")
+	tmpl := template.Must(template.ParseFiles("templates/pokemon.html"))
+	pokemon := getRandom(&MongoDb)
+	if err := tmpl.Execute(w, pokemon); err != nil {
+		logrus.Error(err)
+	}
+}
+
+//Who's that Pokemon!?
+func whoIsDat(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Endpoint Hit: Who Dat!?")
+	tmpl := template.Must(template.ParseFiles("templates/whodat.html"))
+	greeting := "WHO's THAT POKEMON!?"
+	if err := tmpl.Execute(w, greeting); err != nil {
+		logrus.Error(err)
+	}
+}
+
+func whoIsDatEasy(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Endpoint Hit: Who Dat!?...Easy Mode")
+	tmpl := template.Must(template.ParseFiles("templates/whodatEasy.html"))
+	pokemon := getRandom(&MongoDb)
+	if err := tmpl.Execute(w, pokemon); err != nil {
+		logrus.Error(err)
+	}
+}
+
+func whoIsDatMedium(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Endpoint Hit: Who Dat!?...Medium Mode")
+	tmpl := template.Must(template.ParseFiles("templates/whodatMedium.html"))
+	pokemon := getRandom(&MongoDb)
+	if err := tmpl.Execute(w, pokemon); err != nil {
+		logrus.Error(err)
+	}
+}
+
+func whoIsDatHard(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Endpoint Hit: Who Dat!?...Hard Mode")
+	tmpl := template.Must(template.ParseFiles("templates/whodatHard.html"))
+	pokemon := getRandom(&MongoDb)
+	if err := tmpl.Execute(w, pokemon); err != nil {
+		logrus.Error(err)
+	}
+}
+
 //Handle Requests..
 func HandleRequests() {
 	myRouter := mux.NewRouter().StrictSlash(true)
-	myRouter.HandleFunc("/", homePage).Methods("GET")
-	myRouter.HandleFunc("/pokedex", returnFullPokedex).Methods("GET")
-	myRouter.HandleFunc("/pokemon/{id}", returnSinglePokemon).Methods("GET")
-	myRouter.HandleFunc("/randpoke", returnRandomPokemon).Methods("GET")
-	myRouter.HandleFunc("/whodat", whoIsDat).Methods("GET")
+	myRouter.HandleFunc("/", homePage)
+	myRouter.HandleFunc("/pokedex", returnFullPokedex)
+	myRouter.HandleFunc("/pokemon/{id}", returnSinglePokemon)
+	myRouter.HandleFunc("/randpoke", returnRandomPokemon)
+	myRouter.HandleFunc("/whodat", whoIsDat)
+	myRouter.HandleFunc("/whodatEasy", whoIsDatEasy)
+	myRouter.HandleFunc("/whodatMedium", whoIsDatMedium)
+	myRouter.HandleFunc("/whodatHard", whoIsDatHard)
 	log.Fatal(http.ListenAndServe(":8082", myRouter))
 }
