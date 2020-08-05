@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <header>
+    <style>
+            body {
+                    padding: 20px 20px 20px 20px;
+            }
+    </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <nav class="navbar navbar-fixed-top">
-            <div class="active"><a href="/">Home</a></div>
-            <a href="/pokedex">Pokdex</a>
-            <a href="/randpoke">Random Pokemon</a>
-            <a href="/whodat">Who's That Pokemon</a>
-      </nav>
 </header>
+<body>
+    <nav class="navbar navbar-fixed-top">
+        <div class="active"><a href="/">Home</a></div>
+        <a href="/pokedex">Pokdex</a>
+        <a href="/randpoke">Random Pokemon</a>
+        <a href="/whodat">Who's That Pokemon</a>
+    </nav>
     <center><h1>{{.Name}}</h1></center>
-        {{if .SecElement}}
-        <div class="Heading">
+    {{if .SecElement}}
+    <div class="Heading">
+        <span class="Id">{{.Id}}</span>. 
+        <span class="Name">{{.Name}}</span>: The 
+        <span class="Species">{{.Species}}</span>. From the Region of 
+        <span class="Region">{{.Region}}</span>.
+    </div>
+    <div class="Specs">
+        <span class="Height">{{.Height}}</span> tall and weighs 
+        <span class="Weight">{{.Weight}}</span>.
+        <span class="Typing">
+            <span class="Element">{{.Element}}</span> type and 
+            <span class="SecElement">{{.SecElement}}</span> type.
+        </span>
+    </div>
+
+    <div class="PkdxText">
+        <div class="PkdxEntry">{{.PkdxEntry}}</div>
+    </div>
+    {{else}}
+    <div class="Heading">
             <span class="Id">{{.Id}}</span>. 
             <span class="Name">{{.Name}}</span>: The 
             <span class="Species">{{.Species}}</span>. From the Region of 
             <span class="Region">{{.Region}}</span>.
         </div>
         <div class="Specs">
-            <span class="Height">{{.Height}}</span> tall and weighs 
+            <span class="Height">{{.Height}}</span> tall and weighs
             <span class="Weight">{{.Weight}}</span>.
             <span class="Typing">
-                <span class="Element">{{.Element}}</span> type and 
-                <span class="SecElement">{{.SecElement}}</span> type.
+                <span class="Element">{{.Element}}</span> type.
             </span>
         </div>
-
         <div class="PkdxText">
             <div class="PkdxEntry">{{.PkdxEntry}}</div>
         </div>
-        {{else}}
-        <div class="Heading">
-                <span class="Id">{{.Id}}</span>. 
-                <span class="Name">{{.Name}}</span>: The 
-                <span class="Species">{{.Species}}</span>. From the Region of 
-                <span class="Region">{{.Region}}</span>.
-            </div>
-            <div class="Specs">
-                <span class="Height">{{.Height}}</span> tall and weighs
-                <span class="Weight">{{.Weight}}</span>.
-                <span class="Typing">
-                    <span class="Element">{{.Element}}</span> type.
-                </span>
-            </div>
-            <div class="PkdxText">
-                <div class="PkdxEntry">{{.PkdxEntry}}</div>
-            </div>
-        {{end}}
+    {{end}}
+</body>
 </html>

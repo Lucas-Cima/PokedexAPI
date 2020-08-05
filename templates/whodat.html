@@ -1,28 +1,36 @@
 <!DOCTYPE html> 
 <html lang="en">
 <header>
+      <style>
+            body {
+                  padding: 20px 20px 20px 20px;
+            }
+      </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <nav class="navbar navbar-fixed-top">
-            <div class="active"><a href="/">Home</a></div>
-            <a href="/pokedex">Pokdex</a>
-            <a href="/randpoke">Random Pokemon</a>
-            <a href="/whodat">Who's That Pokemon</a>
-      </nav>
+
 </header>
-      <center>
-      <h1>{{.}}</h1>
-      <h3>Difficulty Options:</h3>
-      <form action="/whodatEasy">
-            <label for="easy">Easy</label>
-            <input type="submit" id="easy" name="easy"><br>
-      </form>
-      <form action="/whodatMedium">
-            <label for="medium">Medium</label>
-            <input type="submit" id="medium" name="medium"><br>
-      </form>
-      <form action="/whodatHard">
-            <label for="hard">Hard</label>
-            <input type="submit" id="hard" name="hard">
-      </form>
-      </center>      
+      <body>
+            <nav class="navbar navbar-fixed-top">
+                  <div class="active"><a href="/">Home</a></div>
+                  <a href="/pokedex">Pokdex</a>
+                  <a href="/randpoke">Random Pokemon</a>
+                  <a href="/whodat">Who's That Pokemon</a>
+            </nav>
+            <center>
+                  <h1>{{.}}</h1>
+                  <h3>Difficulty Options:</h3>
+                  <form action="/whodatEasy">
+                        <label for="easy">Easy</label>
+                        <input type="submit" id="easy" name="easy"><br>
+                  </form>
+                  <form action="/whodatMedium">
+                        <label for="medium">Medium</label>
+                        <input type="submit" id="medium" name="medium"><br>
+                  </form>
+                  <form action="/whodatHard">
+                        <label for="hard">Hard</label>
+                        <input type="submit" id="hard" name="hard">
+                  </form>
+            </center> 
+      </body>     
 </html>
