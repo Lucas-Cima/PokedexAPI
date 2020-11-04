@@ -150,5 +150,6 @@ func HandleRequests() {
 	myRouter.HandleFunc("/whodatEasy", whoIsDatEasy)
 	myRouter.HandleFunc("/whodatMedium", whoIsDatMedium)
 	myRouter.HandleFunc("/whodatHard", whoIsDatHard)
+	//http.Handle("/pokedexAPI/src/", http.StripPrefix("/pokedexAPI/src/", http.FileServer(http.Dir("pokedexAPI/src/"))))
 	log.Fatal(http.ListenAndServe(":8082", myRouter))
 }
