@@ -59,7 +59,7 @@ func getPokedex(collection *mongo.Collection) (pokedex []model.Pokemon) {
 //LANDING PAGE HANDLER
 func homePage(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: homePage")
-	tmpl := template.Must(template.ParseFiles("templates/index.html"))
+	tmpl := template.Must(template.ParseFiles("pokedexAPI/src/app/app.component.html"))
 	greeting := "Welcome to the World of Pokemon!"
 	if err := tmpl.Execute(w, greeting); err != nil {
 		logrus.Error(err)
@@ -69,7 +69,7 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 //POKEDEX HANDLER
 func returnFullPokedex(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endoint Hit: Full Pokedex")
-	tmpl := template.Must(template.ParseFiles("templates/pokedex.html"))
+	tmpl := template.Must(template.ParseFiles("pokedexAPI/src/app/pokedex/pokedex.component.html"))
 	pokedex := getPokedex(&MongoDb)
 	if err := tmpl.Execute(w, pokedex); err != nil {
 		logrus.Error(err)
@@ -79,7 +79,7 @@ func returnFullPokedex(w http.ResponseWriter, r *http.Request) {
 //SINGLE POKEMON
 func returnSinglePokemon(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: Single Pokemon")
-	tmpl := template.Must(template.ParseFiles("templates/pokemon.html"))
+	tmpl := template.Must(template.ParseFiles("pokedexAPI/src/app/pokemon/pokemon.component.html"))
 	pokedex := getPokedex(&MongoDb)
 	vars := mux.Vars(r)
 	key := vars["id"]
@@ -95,7 +95,7 @@ func returnSinglePokemon(w http.ResponseWriter, r *http.Request) {
 //RANDOM POKEMON
 func returnRandomPokemon(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: Random Pokemon")
-	tmpl := template.Must(template.ParseFiles("templates/pokemon.html"))
+	tmpl := template.Must(template.ParseFiles("pokedexAPI/src/app/pokemon/pokemon.component.html"))
 	pokemon := getRandom(&MongoDb)
 	if err := tmpl.Execute(w, pokemon); err != nil {
 		logrus.Error(err)
@@ -105,7 +105,7 @@ func returnRandomPokemon(w http.ResponseWriter, r *http.Request) {
 //Who's that Pokemon!?
 func whoIsDat(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: Who Dat!?")
-	tmpl := template.Must(template.ParseFiles("templates/whodat.html"))
+	tmpl := template.Must(template.ParseFiles("pokedexAPI/src/app/who-dat/who-dat.component.html"))
 	greeting := "WHO's THAT POKEMON!?"
 	if err := tmpl.Execute(w, greeting); err != nil {
 		logrus.Error(err)
