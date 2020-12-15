@@ -1,0 +1,1443 @@
+{
+    "_id":      "0001", 
+    "DexNum":   "001",
+    "Region":   "Kanto",
+    "Name":     "Bulbasaur",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0002", 
+    "DexNum":   "002",
+    "Region":   "Kanto",
+    "Name":     "Ivysaur",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0003", 
+    "DexNum":   "003",
+    "Region":   "Kanto",
+    "Name":     "Venusaur",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0004", 
+    "DexNum":   "004",
+    "Region":   "Kanto",
+    "Name":     "Charmander",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0005", 
+    "DexNum":   "005",
+    "Region":   "Kanto",
+    "Name":     "Charmeleon",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0006", 
+    "DexNum":   "006",
+    "Region":   "Kanto",
+    "Name":     "Charizard",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0007", 
+    "DexNum":   "007",
+    "Region":   "Kanto",
+    "Name":     "Squirtle",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0008", 
+    "DexNum":   "008",
+    "Region":   "Kanto",
+    "Name":     "Wartortle",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0009", 
+    "DexNum":   "009",
+    "Region":   "Kanto",
+    "Name":     "Blastoise",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0010", 
+    "DexNum":   "010",
+    "Region":   "Kanto",
+    "Name":     "Caterpie",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0011", 
+    "DexNum":   "011",
+    "Region":   "Kanto",
+    "Name":     "Metapod",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0012", 
+    "DexNum":   "012",
+    "Region":   "Kanto",
+    "Name":     "Butterfree",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0013", 
+    "DexNum":   "013",
+    "Region":   "Kanto",
+    "Name":     "Weedle",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0014", 
+    "DexNum":   "014",
+    "Region":   "Kanto",
+    "Name":     "Kakuna",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0015", 
+    "DexNum":   "015",
+    "Region":   "Kanto",
+    "Name":     "Beedrill",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0016", 
+    "DexNum":   "016",
+    "Region":   "Kanto",
+    "Name":     "Pidgey",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0017", 
+    "DexNum":   "017",
+    "Region":   "Kanto",
+    "Name":     "Pidgeotto",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0018", 
+    "DexNum":   "018",
+    "Region":   "Kanto",
+    "Name":     "Pidgeot",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0019", 
+    "DexNum":   "019",
+    "Region":   "Kanto",
+    "Name":     "Rattata",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0020", 
+    "DexNum":   "019",
+    "Region":   "Kanto",
+    "Name":     "Rattata",
+    "Form":     "Alolan",
+    "Caught":   false
+}
+{
+    "_id":      "0021", 
+    "DexNum":   "020",
+    "Region":   "Kanto",
+    "Name":     "Raticate",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0022", 
+    "DexNum":   "020",
+    "Region":   "Kanto",
+    "Name":     "Raticate",
+    "Form":     "Alolan",
+    "Caught":   false
+}
+{
+    "_id":      "0023", 
+    "DexNum":   "021",
+    "Region":   "Kanto",
+    "Name":     "Spearow",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0024", 
+    "DexNum":   "022",
+    "Region":   "Kanto",
+    "Name":     "Fearow",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0025", 
+    "DexNum":   "023",
+    "Region":   "Kanto",
+    "Name":     "Ekans",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0026", 
+    "DexNum":   "024",
+    "Region":   "Kanto",
+    "Name":     "Arbok",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0027", 
+    "DexNum":   "025",
+    "Region":   "Kanto",
+    "Name":     "Pikachu",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0028", 
+    "DexNum":   "026",
+    "Region":   "Kanto",
+    "Name":     "Raichu",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0029", 
+    "DexNum":   "026",
+    "Region":   "Kanto",
+    "Name":     "Raichu",
+    "Form":     "Alolan",
+    "Caught":   false
+}
+{
+    "_id":      "0030", 
+    "DexNum":   "027",
+    "Region":   "Kanto",
+    "Name":     "Sandshrew",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0031", 
+    "DexNum":   "027",
+    "Region":   "Kanto",
+    "Name":     "Sandshrew",
+    "Form":     "Alolan",
+    "Caught":   false
+}
+{
+    "_id":      "0032", 
+    "DexNum":   "028",
+    "Region":   "Kanto",
+    "Name":     "Sandslash",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0033", 
+    "DexNum":   "028",
+    "Region":   "Kanto",
+    "Name":     "Sandslash",
+    "Form":     "Alolan",
+    "Caught":   false
+}
+{
+    "_id":      "0034", 
+    "DexNum":   "029",
+    "Region":   "Kanto",
+    "Name":     "Nidoran♀",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0035", 
+    "DexNum":   "030",
+    "Region":   "Kanto",
+    "Name":     "Nidorina",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0036", 
+    "DexNum":   "031",
+    "Region":   "Kanto",
+    "Name":     "Nidoqueen",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0037", 
+    "DexNum":   "032",
+    "Region":   "Kanto",
+    "Name":     "Nidoran♂",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0038", 
+    "DexNum":   "033",
+    "Region":   "Kanto",
+    "Name":     "Nidorino",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0039", 
+    "DexNum":   "034",
+    "Region":   "Kanto",
+    "Name":     "Nidoking",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0040", 
+    "DexNum":   "035",
+    "Region":   "Kanto",
+    "Name":     "Clefairy",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0041", 
+    "DexNum":   "036",
+    "Region":   "Kanto",
+    "Name":     "Clefable",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0042", 
+    "DexNum":   "037",
+    "Region":   "Kanto",
+    "Name":     "Vulpix",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0043", 
+    "DexNum":   "037",
+    "Region":   "Kanto",
+    "Name":     "Vulpix",
+    "Form":     "Alolan",
+    "Caught":   false
+}
+{
+    "_id":      "0044", 
+    "DexNum":   "038",
+    "Region":   "Kanto",
+    "Name":     "Ninetales",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0045", 
+    "DexNum":   "038",
+    "Region":   "Kanto",
+    "Name":     "Ninetales",
+    "Form":     "Alolan",
+    "Caught":   false
+}
+{
+    "_id":      "0046", 
+    "DexNum":   "039",
+    "Region":   "Kanto",
+    "Name":     "Jigglypuff",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0047", 
+    "DexNum":   "040",
+    "Region":   "Kanto",
+    "Name":     "Wigglytuff",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0048", 
+    "DexNum":   "041",
+    "Region":   "Kanto",
+    "Name":     "Zubat",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0049", 
+    "DexNum":   "042",
+    "Region":   "Kanto",
+    "Name":     "Golbat",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0050", 
+    "DexNum":   "043",
+    "Region":   "Kanto",
+    "Name":     "Oddish",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0051", 
+    "DexNum":   "044",
+    "Region":   "Kanto",
+    "Name":     "Gloom",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0052", 
+    "DexNum":   "045",
+    "Region":   "Kanto",
+    "Name":     "Vileplume",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0053", 
+    "DexNum":   "046",
+    "Region":   "Kanto",
+    "Name":     "Paras",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0054", 
+    "DexNum":   "047",
+    "Region":   "Kanto",
+    "Name":     "Parasect",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0055", 
+    "DexNum":   "048",
+    "Region":   "Kanto",
+    "Name":     "Venonat",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0056", 
+    "DexNum":   "049",
+    "Region":   "Kanto",
+    "Name":     "Venomoth",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0057", 
+    "DexNum":   "050",
+    "Region":   "Kanto",
+    "Name":     "Diglett",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0058", 
+    "DexNum":   "050",
+    "Region":   "Kanto",
+    "Name":     "Diglett",
+    "Form":     "Alolan",
+    "Caught":   false
+}
+{
+    "_id":      "0059", 
+    "DexNum":   "051",
+    "Region":   "Kanto",
+    "Name":     "Dugtrio",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0060", 
+    "DexNum":   "051",
+    "Region":   "Kanto",
+    "Name":     "Dugtrio",
+    "Form":     "Alolan",
+    "Caught":   false
+}
+{
+    "_id":      "0061", 
+    "DexNum":   "052",
+    "Region":   "Kanto",
+    "Name":     "Meowth",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0062", 
+    "DexNum":   "052",
+    "Region":   "Kanto",
+    "Name":     "Meowth",
+    "Form":     "Alolan",
+    "Caught":   false
+}
+{
+    "_id":      "0063", 
+    "DexNum":   "052",
+    "Region":   "Kanto",
+    "Name":     "Meowth",
+    "Form":     "Galarian",
+    "Caught":   false
+}
+{
+    "_id":      "0064", 
+    "DexNum":   "053",
+    "Region":   "Kanto",
+    "Name":     "Persian",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0065", 
+    "DexNum":   "053",
+    "Region":   "Kanto",
+    "Name":     "Persian",
+    "Form":     "Alolan",
+    "Caught":   false
+}
+{
+    "_id":      "0066", 
+    "DexNum":   "054",
+    "Region":   "Kanto",
+    "Name":     "Psyduck",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0067", 
+    "DexNum":   "055",
+    "Region":   "Kanto",
+    "Name":     "Golduck",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0068", 
+    "DexNum":   "056",
+    "Region":   "Kanto",
+    "Name":     "Mankey",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0069", 
+    "DexNum":   "057",
+    "Region":   "Kanto",
+    "Name":     "Primeape",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0070", 
+    "DexNum":   "058",
+    "Region":   "Kanto",
+    "Name":     "Growlithe",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0071", 
+    "DexNum":   "059",
+    "Region":   "Kanto",
+    "Name":     "Arcanine",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0072", 
+    "DexNum":   "060",
+    "Region":   "Kanto",
+    "Name":     "Poliwag",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0073", 
+    "DexNum":   "061",
+    "Region":   "Kanto",
+    "Name":     "Poliwhirl",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0074", 
+    "DexNum":   "062",
+    "Region":   "Kanto",
+    "Name":     "Poliwrath",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0075", 
+    "DexNum":   "063",
+    "Region":   "Kanto",
+    "Name":     "Abra",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0076", 
+    "DexNum":   "064",
+    "Region":   "Kanto",
+    "Name":     "Kadabra",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0077", 
+    "DexNum":   "065",
+    "Region":   "Kanto",
+    "Name":     "Alakazam",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0078", 
+    "DexNum":   "066",
+    "Region":   "Kanto",
+    "Name":     "Machop",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0079", 
+    "DexNum":   "067",
+    "Region":   "Kanto",
+    "Name":     "Machoke",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0080", 
+    "DexNum":   "068",
+    "Region":   "Kanto",
+    "Name":     "Machamp",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0081", 
+    "DexNum":   "069",
+    "Region":   "Kanto",
+    "Name":     "Bellsprout",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0082", 
+    "DexNum":   "070",
+    "Region":   "Kanto",
+    "Name":     "Weepinbell",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0083", 
+    "DexNum":   "071",
+    "Region":   "Kanto",
+    "Name":     "Victreebell",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0084", 
+    "DexNum":   "072",
+    "Region":   "Kanto",
+    "Name":     "Tentacool",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0085", 
+    "DexNum":   "073",
+    "Region":   "Kanto",
+    "Name":     "Tentacruel",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0086", 
+    "DexNum":   "074",
+    "Region":   "Kanto",
+    "Name":     "Geodude",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0087", 
+    "DexNum":   "074",
+    "Region":   "Kanto",
+    "Name":     "Geodude",
+    "Form":     "Alolan",
+    "Caught":   false
+}
+{
+    "_id":      "0088", 
+    "DexNum":   "075",
+    "Region":   "Kanto",
+    "Name":     "Graveler",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0089", 
+    "DexNum":   "075",
+    "Region":   "Kanto",
+    "Name":     "Graveler",
+    "Form":     "Alolan",
+    "Caught":   false
+}
+{
+    "_id":      "0090", 
+    "DexNum":   "076",
+    "Region":   "Kanto",
+    "Name":     "Golem",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0091", 
+    "DexNum":   "076",
+    "Region":   "Kanto",
+    "Name":     "Golem",
+    "Form":     "Alolan",
+    "Caught":   false
+}
+{
+    "_id":      "0092", 
+    "DexNum":   "077",
+    "Region":   "Kanto",
+    "Name":     "Ponyta",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0093", 
+    "DexNum":   "077",
+    "Region":   "Kanto",
+    "Name":     "Ponyta",
+    "Form":     "Galarian",
+    "Caught":   false
+}
+{
+    "_id":      "0094", 
+    "DexNum":   "078",
+    "Region":   "Kanto",
+    "Name":     "Rapidash",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0095", 
+    "DexNum":   "078",
+    "Region":   "Kanto",
+    "Name":     "Rapidash",
+    "Form":     "Galarian",
+    "Caught":   false
+}
+{
+    "_id":      "0096", 
+    "DexNum":   "079",
+    "Region":   "Kanto",
+    "Name":     "Slowpoke",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0097", 
+    "DexNum":   "079",
+    "Region":   "Kanto",
+    "Name":     "Slowpoke",
+    "Form":     "Galarian",
+    "Caught":   false
+}
+{
+    "_id":      "0098", 
+    "DexNum":   "080",
+    "Region":   "Kanto",
+    "Name":     "Slowbro",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0099", 
+    "DexNum":   "080",
+    "Region":   "Kanto",
+    "Name":     "Slowbro",
+    "Form":     "Galarian",
+    "Caught":   false
+}
+{
+    "_id":      "0100", 
+    "DexNum":   "081",
+    "Region":   "Kanto",
+    "Name":     "Magnemite",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0101", 
+    "DexNum":   "082",
+    "Region":   "Kanto",
+    "Name":     "Magneton",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0102", 
+    "DexNum":   "083",
+    "Region":   "Kanto",
+    "Name":     "Farfetch'd",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0103", 
+    "DexNum":   "083",
+    "Region":   "Kanto",
+    "Name":     "Farfetch'd",
+    "Form":     "Galarian",
+    "Caught":   false
+}
+{
+    "_id":      "0104", 
+    "DexNum":   "084",
+    "Region":   "Kanto",
+    "Name":     "Doduo",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0105", 
+    "DexNum":   "085",
+    "Region":   "Kanto",
+    "Name":     "Dodrio",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0106", 
+    "DexNum":   "086",
+    "Region":   "Kanto",
+    "Name":     "Seel",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0107", 
+    "DexNum":   "087",
+    "Region":   "Kanto",
+    "Name":     "Dewgong",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0108", 
+    "DexNum":   "088",
+    "Region":   "Kanto",
+    "Name":     "Grimer",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0109", 
+    "DexNum":   "088",
+    "Region":   "Kanto",
+    "Name":     "Grimer",
+    "Form":     "Alolan",
+    "Caught":   false
+}
+{
+    "_id":      "0110", 
+    "DexNum":   "089",
+    "Region":   "Kanto",
+    "Name":     "Muk",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0111", 
+    "DexNum":   "089",
+    "Region":   "Kanto",
+    "Name":     "Muk",
+    "Form":     "Alolan",
+    "Caught":   false
+}
+{
+    "_id":      "0112", 
+    "DexNum":   "090",
+    "Region":   "Kanto",
+    "Name":     "Shellder",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0113", 
+    "DexNum":   "091",
+    "Region":   "Kanto",
+    "Name":     "Cloyster",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0114", 
+    "DexNum":   "092",
+    "Region":   "Kanto",
+    "Name":     "Gastly",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0115", 
+    "DexNum":   "093",
+    "Region":   "Kanto",
+    "Name":     "Haunter",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0116", 
+    "DexNum":   "094",
+    "Region":   "Kanto",
+    "Name":     "Gengar",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0117", 
+    "DexNum":   "095",
+    "Region":   "Kanto",
+    "Name":     "Onix",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0118", 
+    "DexNum":   "096",
+    "Region":   "Kanto",
+    "Name":     "Drowzee",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0119", 
+    "DexNum":   "097",
+    "Region":   "Kanto",
+    "Name":     "Hypno",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0120", 
+    "DexNum":   "098",
+    "Region":   "Kanto",
+    "Name":     "Krabby",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0121", 
+    "DexNum":   "099",
+    "Region":   "Kanto",
+    "Name":     "Kingler",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0122", 
+    "DexNum":   "100",
+    "Region":   "Kanto",
+    "Name":     "Voltorb",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0123", 
+    "DexNum":   "101",
+    "Region":   "Kanto",
+    "Name":     "Electrode",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0124", 
+    "DexNum":   "102",
+    "Region":   "Kanto",
+    "Name":     "Exeggcute",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0125", 
+    "DexNum":   "103",
+    "Region":   "Kanto",
+    "Name":     "Exeggutor",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0126", 
+    "DexNum":   "103",
+    "Region":   "Kanto",
+    "Name":     "Exeggutor",
+    "Form":     "Alolan",
+    "Caught":   false
+}
+{
+    "_id":      "0127", 
+    "DexNum":   "104",
+    "Region":   "Kanto",
+    "Name":     "Cubone",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0128", 
+    "DexNum":   "105",
+    "Region":   "Kanto",
+    "Name":     "Marowak",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0129", 
+    "DexNum":   "105",
+    "Region":   "Kanto",
+    "Name":     "Marowak",
+    "Form":     "Alolan",
+    "Caught":   false
+}
+{
+    "_id":      "0130", 
+    "DexNum":   "106",
+    "Region":   "Kanto",
+    "Name":     "Hitmonlee",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0131", 
+    "DexNum":   "107",
+    "Region":   "Kanto",
+    "Name":     "Hitmonchan",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0132", 
+    "DexNum":   "108",
+    "Region":   "Kanto",
+    "Name":     "Lickitung",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0133", 
+    "DexNum":   "109",
+    "Region":   "Kanto",
+    "Name":     "Koffing",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0134", 
+    "DexNum":   "110",
+    "Region":   "Kanto",
+    "Name":     "Wheezing",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0135", 
+    "DexNum":   "110",
+    "Region":   "Kanto",
+    "Name":     "Wheezing",
+    "Form":     "Galarian",
+    "Caught":   false
+}
+{
+    "_id":      "0136", 
+    "DexNum":   "111",
+    "Region":   "Kanto",
+    "Name":     "Rhyhorn",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0137", 
+    "DexNum":   "112",
+    "Region":   "Kanto",
+    "Name":     "Rhydon",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0138", 
+    "DexNum":   "113",
+    "Region":   "Kanto",
+    "Name":     "Chansey",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0139", 
+    "DexNum":   "114",
+    "Region":   "Kanto",
+    "Name":     "Tangela",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0140", 
+    "DexNum":   "115",
+    "Region":   "Kanto",
+    "Name":     "Kangaskhan",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0141", 
+    "DexNum":   "116",
+    "Region":   "Kanto",
+    "Name":     "Horsea",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0142", 
+    "DexNum":   "117",
+    "Region":   "Kanto",
+    "Name":     "Seadra",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0143", 
+    "DexNum":   "118",
+    "Region":   "Kanto",
+    "Name":     "Goldeen",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0144", 
+    "DexNum":   "119",
+    "Region":   "Kanto",
+    "Name":     "Seaking",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0145", 
+    "DexNum":   "120",
+    "Region":   "Kanto",
+    "Name":     "Staryu",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0146", 
+    "DexNum":   "121",
+    "Region":   "Kanto",
+    "Name":     "Starmie",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0147", 
+    "DexNum":   "122",
+    "Region":   "Kanto",
+    "Name":     "Mr. Mime",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0148", 
+    "DexNum":   "122",
+    "Region":   "Kanto",
+    "Name":     "Mr. Mime",
+    "Form":     "Galarian",
+    "Caught":   false
+}
+{
+    "_id":      "0149", 
+    "DexNum":   "123",
+    "Region":   "Kanto",
+    "Name":     "Scyther",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0150", 
+    "DexNum":   "124",
+    "Region":   "Kanto",
+    "Name":     "Jynx",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0151", 
+    "DexNum":   "125",
+    "Region":   "Kanto",
+    "Name":     "Electabuzz",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0152", 
+    "DexNum":   "126",
+    "Region":   "Kanto",
+    "Name":     "Magmar",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0153", 
+    "DexNum":   "127",
+    "Region":   "Kanto",
+    "Name":     "Pinsir",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0154", 
+    "DexNum":   "128",
+    "Region":   "Kanto",
+    "Name":     "Tauros",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0155", 
+    "DexNum":   "129",
+    "Region":   "Kanto",
+    "Name":     "Magikarp",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0156", 
+    "DexNum":   "130",
+    "Region":   "Kanto",
+    "Name":     "Gyarados",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0157", 
+    "DexNum":   "131",
+    "Region":   "Kanto",
+    "Name":     "Lapras",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0158", 
+    "DexNum":   "132",
+    "Region":   "Kanto",
+    "Name":     "Ditto",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0159", 
+    "DexNum":   "133",
+    "Region":   "Kanto",
+    "Name":     "Eevee",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0160", 
+    "DexNum":   "134",
+    "Region":   "Kanto",
+    "Name":     "Vaporeon",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0161", 
+    "DexNum":   "135",
+    "Region":   "Kanto",
+    "Name":     "Jolteon",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0162", 
+    "DexNum":   "136",
+    "Region":   "Kanto",
+    "Name":     "Flareon",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0163", 
+    "DexNum":   "137",
+    "Region":   "Kanto",
+    "Name":     "Porygon",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0164", 
+    "DexNum":   "138",
+    "Region":   "Kanto",
+    "Name":     "Omanyte",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0165", 
+    "DexNum":   "139",
+    "Region":   "Kanto",
+    "Name":     "Omastar",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0166", 
+    "DexNum":   "140",
+    "Region":   "Kanto",
+    "Name":     "Kabuto",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0167", 
+    "DexNum":   "141",
+    "Region":   "Kanto",
+    "Name":     "Kabutops",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0168", 
+    "DexNum":   "142",
+    "Region":   "Kanto",
+    "Name":     "Aerodactyl",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0169", 
+    "DexNum":   "143",
+    "Region":   "Kanto",
+    "Name":     "Snorlax",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0170", 
+    "DexNum":   "144",
+    "Region":   "Kanto",
+    "Name":     "Articuno",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0171", 
+    "DexNum":   "144",
+    "Region":   "Kanto",
+    "Name":     "Articuno",
+    "Form":     "Galarian",
+    "Caught":   false
+}
+{
+    "_id":      "0172", 
+    "DexNum":   "145",
+    "Region":   "Kanto",
+    "Name":     "Zapdos",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0173", 
+    "DexNum":   "145",
+    "Region":   "Kanto",
+    "Name":     "Zapdos",
+    "Form":     "Galarian",
+    "Caught":   false
+}
+{
+    "_id":      "0174", 
+    "DexNum":   "146",
+    "Region":   "Kanto",
+    "Name":     "Moltres",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0175", 
+    "DexNum":   "146",
+    "Region":   "Kanto",
+    "Name":     "Moltres",
+    "Form":     "Galarian",
+    "Caught":   false
+}
+{
+    "_id":      "0176", 
+    "DexNum":   "147",
+    "Region":   "Kanto",
+    "Name":     "Dratini",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0177", 
+    "DexNum":   "148",
+    "Region":   "Kanto",
+    "Name":     "Dragonair",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0178", 
+    "DexNum":   "149",
+    "Region":   "Kanto",
+    "Name":     "Dragonite",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0179", 
+    "DexNum":   "150",
+    "Region":   "Kanto",
+    "Name":     "Mewtwo",
+    "Form":     "",
+    "Caught":   false
+}
+{
+    "_id":      "0180", 
+    "DexNum":   "151",
+    "Region":   "Kanto",
+    "Name":     "Mew",
+    "Form":     "",
+    "Caught":   false
+}
+
+
+

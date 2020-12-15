@@ -10,9 +10,10 @@
 </header>
     <nav class="navbar navbar-fixed-top">
         <div class="active"><a href="/">Home</a></div>
-        <a href="/pokedex">Pokdex</a>
+        <a href="/pokedex">Pokedex</a>
         <a href="/randpoke">Random Pokemon</a>
         <a href="/whodat">Who's That Pokemon</a>
+        <a href="/pokecheck">Pokedex Checklist</a>
     </nav>
     <body>
         <center>
@@ -45,6 +46,12 @@
                     <h1 class="PkdxEntry">{{.PkdxEntry}}</h1>
                 </div>
             {{end}}
+
+
+            <form action="/whodatHard">
+                <label for="hard">Hard</label>
+                <input type="submit" id="hard" name="hard">
+          </form>
         </center>
     </body>
 </html>

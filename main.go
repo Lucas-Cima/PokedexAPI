@@ -12,12 +12,13 @@ import (
 )
 
 var mongoDb *mongo.Collection
+var mongoDb2 *mongo.Collection
 
 //MAIN FUNCTION
 func main() {
 	fmt.Println("SERVER UP")
 	findOptions := options.Find()
-	findOptions.SetLimit(151)
+	findOptions.SetLimit(1000)
 
 	clientOptions := options.Client().ApplyURI("mongodb+srv://Lucas:pokemon@pokedex.l4iml.mongodb.net/Pokedex?retryWrites=true&w=majority")
 
@@ -34,6 +35,9 @@ func main() {
 
 	mongoDb = client.Database("Pokedex").Collection("Pokemon")
 	routes.MongoDb = *mongoDb
+
+	mongoDb2 = client.Database("Pokedex").Collection("Checklist")
+	routes.MongoDb2 = *mongoDb2
 
 	defer func() {
 		if err := client.Disconnect(context.Background()); err != nil {

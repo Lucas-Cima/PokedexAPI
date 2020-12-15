@@ -18,7 +18,8 @@ import (
 )
 
 var (
-	MongoDb mongo.Collection
+	MongoDb  mongo.Collection
+	MongoDb2 mongo.Collection
 )
 
 //Getting a random pokemon
@@ -52,6 +53,24 @@ func getPokedex(collection *mongo.Collection) (pokedex []model.Pokemon) {
 			log.Fatal(err)
 		}
 		pokedex = append(pokedex, pokemon)
+	}
+	return
+}
+
+func getPokeCheck(collection *mongo.Collection) (pokedex []model.Pokecheck) {
+	res, err := collection.Find(context.TODO(), bson.D{})
+	if err != nil {
+		logrus.Error(err)
+	}
+	for res.Next(context.TODO()) {
+
+		// create a value into which the single document can be decoded
+		var pokecheck model.Pokecheck
+		err := res.Decode(&pokecheck)
+		if err != nil {
+			log.Fatal(err)
+		}
+		pokedex = append(pokedex, pokecheck)
 	}
 	return
 }
@@ -139,6 +158,15 @@ func whoIsDatHard(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+func pokemonCheckList(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Endpoint Hit: Checklist")
+	tmpl := template.Must(template.ParseFiles("pokedexAPI/src/app/pokecheck/pokecheck.component.html"))
+	pokecheck := getPokeCheck(&MongoDb2)
+	if err := tmpl.Execute(w, pokecheck); err != nil {
+		logrus.Error(err)
+	}
+}
+
 //Handle Requests..
 func HandleRequests() {
 	myRouter := mux.NewRouter().StrictSlash(true)
@@ -150,6 +178,6 @@ func HandleRequests() {
 	myRouter.HandleFunc("/whodatEasy", whoIsDatEasy)
 	myRouter.HandleFunc("/whodatMedium", whoIsDatMedium)
 	myRouter.HandleFunc("/whodatHard", whoIsDatHard)
-	//http.Handle("/pokedexAPI/src/", http.StripPrefix("/pokedexAPI/src/", http.FileServer(http.Dir("pokedexAPI/src/"))))
+	myRouter.HandleFunc("/pokecheck", pokemonCheckList)
 	log.Fatal(http.ListenAndServe(":8082", myRouter))
 }
