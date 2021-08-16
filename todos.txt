@@ -1,6 +1,8 @@
 IN DEVELOPMENT:
 
 TODO: Add more TODO's 
+TODO: Compile all "Whodat" endpoints into one endpoint based on what is in the request
+TODO: Make "Whodat" more interactive. Keeping score, right/wrong message, etc(Break story up into smaller pieces)
 
 
 
