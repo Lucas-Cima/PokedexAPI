@@ -2,20 +2,20 @@
 <html lang="en">
 <header>
       <style>
-            body {
-                  padding: 20px 20px 20px 20px;
-            }
-            .card {
-                  padding: 5px 5px 5px 5px;
-                  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-                  transition: 0.3s;
-                  width: 50%;
-            }
-            .card-content {
-                  padding: 2px 16px;
-            }
+      body {
+            padding: 20px 20px 20px 20px;
+      }
+      .card {
+            padding: 5px 5px 5px 5px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 50%;
+      }
+      .card-content {
+            padding: 2px 16px;
+      }
       </style>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 </header>
       <body>
@@ -29,15 +29,15 @@
             <center>
                   <h1>{{.}}</h1>
                   <h3>Difficulty Options:</h3>
-                  <form action="/whodatEasy">
-                        <label for="easy">Easy</label>
-                        <input type="submit" id="easy" name="easy"><br>
+                  <form action="/whodatEasy" method="POST">
+                        <label for="easy">Easy:</label>
+                        <input type="submit" mode="easy">
                   </form>
-                  <form action="/whodatMedium">
+                  <form action="/whodatMedium" method="POST">
                         <label for="medium">Medium</label>
-                        <input type="submit" id="medium" name="medium"><br>
+                        <input type="submit" id="medium" name="medium">
                   </form>
-                  <form action="/whodatHard">
+                  <form action="/whodatHard" method="POST">
                         <label for="hard">Hard</label>
                         <input type="submit" id="hard" name="hard">
                   </form>

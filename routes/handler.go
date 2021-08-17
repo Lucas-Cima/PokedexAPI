@@ -9,6 +9,7 @@ import (
 	"net/http"
 	"strconv"
 	"time"
+	
 
 	"github.com/Lucas-Cima/PokedexAPI/model"
 	"github.com/gorilla/mux"
@@ -133,8 +134,21 @@ func whoIsDat(w http.ResponseWriter, r *http.Request) {
 
 func whoIsDatEasy(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: Who Dat!?...Easy Mode")
-	tmpl := template.Must(template.ParseFiles("templates/whodatEasy.html"))
+	tmpl := template.Must(template.ParseFiles("templates/whodat/whodatEasy.html"))
 	pokemon := getRandom(&MongoDb)
+	if r.Method == "POST" {
+//		err := r.ParseForm()
+//		if err != nil {
+//			logrus.Error(err)
+//		}
+		fmt.Println("POST Request")
+		//mode := r.FormValue("mode")
+		if r.URL.String() == "/whodatEasy" {
+			fmt.Println("Easy Mode")
+		}
+
+	}
+	fmt.Println(pokemon.Name + " " + pokemon.Id)
 	if err := tmpl.Execute(w, pokemon); err != nil {
 		logrus.Error(err)
 	}
@@ -142,8 +156,9 @@ func whoIsDatEasy(w http.ResponseWriter, r *http.Request) {
 
 func whoIsDatMedium(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: Who Dat!?...Medium Mode")
-	tmpl := template.Must(template.ParseFiles("templates/whodatMedium.html"))
+	tmpl := template.Must(template.ParseFiles("templates/whodat/whodatMedium.html"))
 	pokemon := getRandom(&MongoDb)
+	fmt.Println(pokemon.Name + " " + pokemon.Id)
 	if err := tmpl.Execute(w, pokemon); err != nil {
 		logrus.Error(err)
 	}
@@ -151,8 +166,9 @@ func whoIsDatMedium(w http.ResponseWriter, r *http.Request) {
 
 func whoIsDatHard(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: Who Dat!?...Hard Mode")
-	tmpl := template.Must(template.ParseFiles("templates/whodatHard.html"))
+	tmpl := template.Must(template.ParseFiles("templates/whodat/whodatHard.html"))
 	pokemon := getRandom(&MongoDb)
+	fmt.Println(pokemon.Name + " " + pokemon.Id)
 	if err := tmpl.Execute(w, pokemon); err != nil {
 		logrus.Error(err)
 	}

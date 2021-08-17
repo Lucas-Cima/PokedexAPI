@@ -20,7 +20,7 @@ func main() {
 	findOptions := options.Find()
 	findOptions.SetLimit(1000)
 
-	clientOptions := options.Client().ApplyURI("mongodb+srv://Lucas:pokemon@pokedex.l4iml.mongodb.net/Pokedex?retryWrites=true&w=majority")
+	clientOptions := options.Client().ApplyURI("mongodb+srv://Lucas:Pokemon@pokedex.l4iml.mongodb.net/Pokedex?retryWrites=true&w=majority")
 
 	// Connect to MongoDB
 	client, err := mongo.Connect(context.TODO(), clientOptions)
