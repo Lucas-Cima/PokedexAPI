@@ -12,7 +12,7 @@ import (
 )
 
 var mongoDb *mongo.Collection
-var mongoDb2 *mongo.Collection
+var mongoDb3 *mongo.Collection
 
 //MAIN FUNCTION
 func main() {
@@ -36,8 +36,8 @@ func main() {
 	mongoDb = client.Database("Pokedex").Collection("Pokemon")
 	routes.MongoDb = *mongoDb
 
-	mongoDb2 = client.Database("Pokedex").Collection("Checklist")
-	routes.MongoDb2 = *mongoDb2
+	mongoDb3 = client.Database("Pokedex").Collection("Trainers")
+	routes.MongoDb3 = *mongoDb3
 
 	defer func() {
 		if err := client.Disconnect(context.Background()); err != nil {

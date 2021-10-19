@@ -1,0 +1,21 @@
+{
+    "_id": "1", 
+    "Name": "Lucas Cima",
+    "TrainerList": [
+        {
+                "DexNum" : "001",
+                "Name" : "Bulbasaur",
+                "Form" : ""
+        },
+        {
+            "DexNum" : "004",
+            "Name" : "Charmander",
+            "Form" : ""
+        },
+        {
+            "DexNum" : "007",
+            "Name" : "Squirtle",
+            "Form" : ""
+        }
+    ]
+}

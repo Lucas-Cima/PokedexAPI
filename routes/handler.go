@@ -9,7 +9,6 @@ import (
 	"net/http"
 	"strconv"
 	"time"
-	
 
 	"github.com/Lucas-Cima/PokedexAPI/model"
 	"github.com/gorilla/mux"
@@ -20,7 +19,7 @@ import (
 
 var (
 	MongoDb  mongo.Collection
-	MongoDb2 mongo.Collection
+	MongoDb3 mongo.Collection
 )
 
 //Getting a random pokemon
@@ -58,20 +57,20 @@ func getPokedex(collection *mongo.Collection) (pokedex []model.Pokemon) {
 	return
 }
 
-func getPokeCheck(collection *mongo.Collection) (pokedex []model.Pokecheck) {
+//GET FULL LIST OF TRAINERS
+func getTrainerList(collection *mongo.Collection) (trainers []model.Trainer) {
 	res, err := collection.Find(context.TODO(), bson.D{})
 	if err != nil {
 		logrus.Error(err)
 	}
 	for res.Next(context.TODO()) {
-
 		// create a value into which the single document can be decoded
-		var pokecheck model.Pokecheck
-		err := res.Decode(&pokecheck)
+		var trainer model.Trainer
+		err := res.Decode(&trainer)
 		if err != nil {
 			log.Fatal(err)
 		}
-		pokedex = append(pokedex, pokecheck)
+		trainers = append(trainers, trainer)
 	}
 	return
 }
@@ -82,7 +81,7 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 	tmpl := template.Must(template.ParseFiles("templates/index.html"))
 	greeting := "Welcome to the World of Pokemon!"
 	if err := tmpl.Execute(w, greeting); err != nil {
-		logrus.Error(err)  
+		logrus.Error(err)
 	}
 }
 
@@ -133,6 +132,7 @@ func whoIsDat(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 	if r.Method == "POST" {
+		//EASY MODE
 		if r.URL.String() == "/whodatEasy" {
 			fmt.Println("Endpoint Hit: Who Dat!?...Easy Mode")
 			tmpl := template.Must(template.ParseFiles("templates/whodat/whodatEasy.html"))
@@ -142,6 +142,7 @@ func whoIsDat(w http.ResponseWriter, r *http.Request) {
 				logrus.Error(err)
 			}
 		}
+		//MEDIUM MODE
 		if r.URL.String() == "/whodatMedium" {
 			fmt.Println("Endpoint Hit: Who Dat!?...Medium Mode")
 			tmpl := template.Must(template.ParseFiles("templates/whodat/whodatMedium.html"))
@@ -151,6 +152,7 @@ func whoIsDat(w http.ResponseWriter, r *http.Request) {
 				logrus.Error(err)
 			}
 		}
+		//HARD MODE
 		if r.URL.String() == "/whodatHard" {
 			fmt.Println("Endpoint Hit: Who Dat!?...Hard Mode")
 			tmpl := template.Must(template.ParseFiles("templates/whodat/whodatHard.html"))
@@ -163,12 +165,29 @@ func whoIsDat(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func pokemonCheckList(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("Endpoint Hit: Checklist")
-	tmpl := template.Must(template.ParseFiles("templates/pokedex/pokecheck.html"))
-	pokecheck := getPokeCheck(&MongoDb2)
-	if err := tmpl.Execute(w, pokecheck); err != nil {
+//RETURNS LIST OF TRAINERS
+func returnTrainerList(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Endpoint Hit: Trainer List")
+	tmpl := template.Must(template.ParseFiles("templates/trainer/trainerlist.html"))
+	trainers := getTrainerList(&MongoDb3)
+	if err := tmpl.Execute(w, trainers); err != nil {
 		logrus.Error(err)
+	}
+}
+
+//RETURNS SINGLE TRAINER
+func returnSingleTrainer(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Endpoint Hit: Single Trainer")
+	tmpl := template.Must(template.ParseFiles("templates/trainer/trainer.html"))
+	trainerList := getTrainerList(&MongoDb3)
+	vars := mux.Vars(r)
+	key := vars["name"]
+	for _, trainer := range trainerList {
+		if trainer.Name == key {
+			if err := tmpl.Execute(w, trainer); err != nil {
+				logrus.Error(err)
+			}
+		}
 	}
 }
 
@@ -183,6 +202,7 @@ func HandleRequests() {
 	myRouter.HandleFunc("/whodatEasy", whoIsDat)
 	myRouter.HandleFunc("/whodatMedium", whoIsDat)
 	myRouter.HandleFunc("/whodatHard", whoIsDat)
-	myRouter.HandleFunc("/pokecheck", pokemonCheckList)
+	myRouter.HandleFunc("/trainerList", returnTrainerList)
+	myRouter.HandleFunc("/trainer/{name}", returnSingleTrainer)
 	log.Fatal(http.ListenAndServe(":8082", myRouter))
 }
