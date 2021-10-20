@@ -1,0 +1,47 @@
+{{define "pokecard"}}
+{{if .SecElement}}
+<section class="card">
+<div class="card-content">
+<div class="Heading">
+    <h4 class="Id">{{.Id}}</h4> 
+    <h2 class="Name"><a href="/pokemon/{{.Id}}">{{.Name}}</h2></a> The 
+    <span class="Species">{{.Species}}</span>. From the Region of 
+    <span class="Region">{{.Region}}</span>.
+</div>
+<div class="Specs">
+    <span class="Height">{{.Height}}</span> tall and weighs 
+    <span class="Weight">{{.Weight}}</span>.
+    <span class="Typing">
+        <span class="Element">{{.Element}}</span> type and 
+        <span class="SecElement">{{.SecElement}}</span> type.
+    </span>
+</div>
+<div class="PkdxText">
+    <div class="PkdxEntry">{{.PkdxEntry}}</div>
+</div>
+</div>
+</section>
+{{else}}
+<section class="card">
+<div class="card-content">
+<div class="Heading">
+    <h4 class="Id">{{.Id}}</h4>
+    <h2 class="Name"><a href="/pokemon/{{.Id}}">{{.Name}}</h2></a> The 
+    <span class="Species">{{.Species}}</span>. From the Region of 
+    <span class="Region">{{.Region}}</span>.
+</div>
+<div class="Specs">
+    <span class="Height">{{.Height}}</span> tall and weighs
+    <span class="Weight">{{.Weight}}</span>.
+    <span class="Typing">
+        <span class="Element">{{.Element}}</span> type.
+    </span>
+</div>
+<div class="PkdxText">
+    <div class="PkdxEntry">{{.PkdxEntry}}</div>
+</div>
+</div>
+</section>
+{{end}}
+<br>
+{{end}}

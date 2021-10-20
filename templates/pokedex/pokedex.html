@@ -3,51 +3,7 @@
     <body>
         <center><h1>Behold, The Complete Pokedex</h1></center>
         {{range .}}
-            {{if .SecElement}}
-            <section class="card">
-            <div class="card-content">
-            <div class="Heading">
-                <span class="Id">{{.Id}}</span>. 
-                <span class="Name"><a href="/pokemon/{{.Id}}">{{.Name}}</span></a>: The 
-                <span class="Species">{{.Species}}</span>. From the Region of 
-                <span class="Region">{{.Region}}</span>.
-            </div>
-            <div class="Specs">
-                <span class="Height">{{.Height}}</span> tall and weighs 
-                <span class="Weight">{{.Weight}}</span>.
-                <span class="Typing">
-                    <span class="Element">{{.Element}}</span> type and 
-                    <span class="SecElement">{{.SecElement}}</span> type.
-                </span>
-            </div>
-            <div class="PkdxText">
-                <div class="PkdxEntry">{{.PkdxEntry}}</div>
-            </div>
-            </div>
-            </section>
-            {{else}}
-            <section class="card">
-            <div class="card-content">
-            <div class="Heading">
-                <span class="Id">{{.Id}}</span>. 
-                <span class="Name"><a href="/pokemon/{{.Id}}">{{.Name}}</span></a>: The 
-                <span class="Species">{{.Species}}</span>. From the Region of 
-                <span class="Region">{{.Region}}</span>.
-            </div>
-            <div class="Specs">
-                <span class="Height">{{.Height}}</span> tall and weighs
-                <span class="Weight">{{.Weight}}</span>.
-                <span class="Typing">
-                    <span class="Element">{{.Element}}</span> type.
-                </span>
-            </div>
-            <div class="PkdxText">
-                <div class="PkdxEntry">{{.PkdxEntry}}</div>
-            </div>
-            </div>
-            </section>
-            {{end}}
-        <br>
+            {{template "pokecard" .}}
         {{end}}
     </body>
     

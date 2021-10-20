@@ -21,6 +21,7 @@ var (
 	MongoDb  mongo.Collection
 	MongoDb3 mongo.Collection
 	header   = "templates/header.html"
+	pokecard = "templates/pokecard.html"
 )
 
 //Getting a random pokemon
@@ -89,7 +90,7 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 //POKEDEX HANDLER
 func returnFullPokedex(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endoint Hit: Full Pokedex")
-	tmpl := template.Must(template.ParseFiles("templates/pokedex/pokedex.html", header))
+	tmpl := template.Must(template.ParseFiles("templates/pokedex/pokedex.html", header, pokecard))
 	pokedex := getPokedex(&MongoDb)
 	if err := tmpl.Execute(w, pokedex); err != nil {
 		logrus.Error(err)
@@ -99,7 +100,7 @@ func returnFullPokedex(w http.ResponseWriter, r *http.Request) {
 //SINGLE POKEMON
 func returnSinglePokemon(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: Single Pokemon")
-	tmpl := template.Must(template.ParseFiles("templates/pokedex/pokemon.html", header))
+	tmpl := template.Must(template.ParseFiles("templates/pokedex/pokemon.html", header, pokecard))
 	pokedex := getPokedex(&MongoDb)
 	vars := mux.Vars(r)
 	key := vars["id"]
@@ -115,7 +116,7 @@ func returnSinglePokemon(w http.ResponseWriter, r *http.Request) {
 //RANDOM POKEMON
 func returnRandomPokemon(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: Random Pokemon")
-	tmpl := template.Must(template.ParseFiles("templates/pokedex/pokemon.html", header))
+	tmpl := template.Must(template.ParseFiles("templates/pokedex/pokemon.html", header, pokecard))
 	pokemon := getRandom(&MongoDb)
 	if err := tmpl.Execute(w, pokemon); err != nil {
 		logrus.Error(err)
