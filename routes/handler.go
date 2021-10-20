@@ -20,6 +20,7 @@ import (
 var (
 	MongoDb  mongo.Collection
 	MongoDb3 mongo.Collection
+	header   = "templates/header.html"
 )
 
 //Getting a random pokemon
@@ -78,7 +79,7 @@ func getTrainerList(collection *mongo.Collection) (trainers []model.Trainer) {
 //LANDING PAGE HANDLER
 func homePage(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: homePage")
-	tmpl := template.Must(template.ParseFiles("templates/index.html"))
+	tmpl := template.Must(template.ParseFiles("templates/index.html", header))
 	greeting := "Welcome to the World of Pokemon!"
 	if err := tmpl.Execute(w, greeting); err != nil {
 		logrus.Error(err)
@@ -88,7 +89,7 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 //POKEDEX HANDLER
 func returnFullPokedex(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endoint Hit: Full Pokedex")
-	tmpl := template.Must(template.ParseFiles("templates/pokedex/pokedex.html"))
+	tmpl := template.Must(template.ParseFiles("templates/pokedex/pokedex.html", header))
 	pokedex := getPokedex(&MongoDb)
 	if err := tmpl.Execute(w, pokedex); err != nil {
 		logrus.Error(err)
@@ -98,7 +99,7 @@ func returnFullPokedex(w http.ResponseWriter, r *http.Request) {
 //SINGLE POKEMON
 func returnSinglePokemon(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: Single Pokemon")
-	tmpl := template.Must(template.ParseFiles("templates/pokedex/pokemon.html"))
+	tmpl := template.Must(template.ParseFiles("templates/pokedex/pokemon.html", header))
 	pokedex := getPokedex(&MongoDb)
 	vars := mux.Vars(r)
 	key := vars["id"]
@@ -114,7 +115,7 @@ func returnSinglePokemon(w http.ResponseWriter, r *http.Request) {
 //RANDOM POKEMON
 func returnRandomPokemon(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: Random Pokemon")
-	tmpl := template.Must(template.ParseFiles("templates/pokedex/pokemon.html"))
+	tmpl := template.Must(template.ParseFiles("templates/pokedex/pokemon.html", header))
 	pokemon := getRandom(&MongoDb)
 	if err := tmpl.Execute(w, pokemon); err != nil {
 		logrus.Error(err)
@@ -125,7 +126,7 @@ func returnRandomPokemon(w http.ResponseWriter, r *http.Request) {
 func whoIsDat(w http.ResponseWriter, r *http.Request) {
 	if r.Method == "GET" {
 		fmt.Println("Endpoint Hit: Who Dat!?")
-		tmpl := template.Must(template.ParseFiles("templates/whodat/who-dat.html"))
+		tmpl := template.Must(template.ParseFiles("templates/whodat/who-dat.html", header))
 		greeting := "WHO's THAT POKEMON!?"
 		if err := tmpl.Execute(w, greeting); err != nil {
 			logrus.Error(err)
@@ -135,7 +136,7 @@ func whoIsDat(w http.ResponseWriter, r *http.Request) {
 		//EASY MODE
 		if r.URL.String() == "/whodatEasy" {
 			fmt.Println("Endpoint Hit: Who Dat!?...Easy Mode")
-			tmpl := template.Must(template.ParseFiles("templates/whodat/whodatEasy.html"))
+			tmpl := template.Must(template.ParseFiles("templates/whodat/whodatEasy.html", header))
 			pokemon := getRandom(&MongoDb)
 			fmt.Println(pokemon.Name + " " + pokemon.Id)
 			if err := tmpl.Execute(w, pokemon); err != nil {
@@ -145,7 +146,7 @@ func whoIsDat(w http.ResponseWriter, r *http.Request) {
 		//MEDIUM MODE
 		if r.URL.String() == "/whodatMedium" {
 			fmt.Println("Endpoint Hit: Who Dat!?...Medium Mode")
-			tmpl := template.Must(template.ParseFiles("templates/whodat/whodatMedium.html"))
+			tmpl := template.Must(template.ParseFiles("templates/whodat/whodatMedium.html", header))
 			pokemon := getRandom(&MongoDb)
 			fmt.Println(pokemon.Name + " " + pokemon.Id)
 			if err := tmpl.Execute(w, pokemon); err != nil {
@@ -155,7 +156,7 @@ func whoIsDat(w http.ResponseWriter, r *http.Request) {
 		//HARD MODE
 		if r.URL.String() == "/whodatHard" {
 			fmt.Println("Endpoint Hit: Who Dat!?...Hard Mode")
-			tmpl := template.Must(template.ParseFiles("templates/whodat/whodatHard.html"))
+			tmpl := template.Must(template.ParseFiles("templates/whodat/whodatHard.html", header))
 			pokemon := getRandom(&MongoDb)
 			fmt.Println(pokemon.Name + " " + pokemon.Id)
 			if err := tmpl.Execute(w, pokemon); err != nil {
@@ -168,7 +169,7 @@ func whoIsDat(w http.ResponseWriter, r *http.Request) {
 //RETURNS LIST OF TRAINERS
 func returnTrainerList(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: Trainer List")
-	tmpl := template.Must(template.ParseFiles("templates/trainer/trainerlist.html"))
+	tmpl := template.Must(template.ParseFiles("templates/trainer/trainerlist.html", header))
 	trainers := getTrainerList(&MongoDb3)
 	if err := tmpl.Execute(w, trainers); err != nil {
 		logrus.Error(err)
@@ -178,7 +179,7 @@ func returnTrainerList(w http.ResponseWriter, r *http.Request) {
 //RETURNS SINGLE TRAINER
 func returnSingleTrainer(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("Endpoint Hit: Single Trainer")
-	tmpl := template.Must(template.ParseFiles("templates/trainer/trainer.html"))
+	tmpl := template.Must(template.ParseFiles("templates/trainer/trainer.html", header))
 	trainerList := getTrainerList(&MongoDb3)
 	vars := mux.Vars(r)
 	key := vars["name"]

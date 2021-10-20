@@ -1,37 +1,12 @@
 <!doctype html>
-<html lang="en">
-<head>
-    <style>
-        body {
-            padding: 20px 20px 20px 20px;
-        }
-        .card {
-            padding: 5px 5px 5px 5px;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
-            width: 15%;
-        }
-        .card-content {
-            padding: 2px 16px;
-        }
-    </style>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <nav class="navbar navbar-fixed-top">
-        <div class="active"><a href="/">Home</a></div>
-        <a href="/pokedex">Pokedex</a>
-        <a href="/randpoke">Random Pokemon</a>
-        <a href="/whodat">Who's That Pokemon</a>
-        <a href="/trainerList">Trainers</a>
-    </nav>
-  <meta charset="utf-8">
-  <title>Trainer List</title>
+{{template "header" .}}
 <body>
     <center><h1>Behold, The Great Pokemon Masters</h1></center>
     {{range .}}
     <section class="card">
         <div class="card-content">
-        <div class="Heading"> 
-            <span class="Name"><a href="/trainer/{{.Name}}">{{.Name}}</span></a>
+        <div> 
+            <h3><a href="/trainer/{{.Name}}">{{.Name}}</h3></a>
     {{end}}
 </body>
 </html>
