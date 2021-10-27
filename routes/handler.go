@@ -2,6 +2,7 @@ package routes
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"html/template"
 	"log"
@@ -193,6 +194,31 @@ func returnSingleTrainer(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+func returnCreateTrainer(w http.ResponseWriter, r *http.Request) {
+	if r.Method == "GET" {
+		fmt.Println("Endpoint Hit: Create Trainer")
+		tmpl := template.Must(template.ParseFiles("templates/trainer/createtrainer.html", header))
+		if err := tmpl.Execute(w, nil); err != nil {
+			logrus.Error(err)
+		}
+	}
+	if r.Method == "POST" {
+		fmt.Println("Endpoint Hit: Trainer Created")
+		var trainer model.Trainer
+		err := json.NewDecoder(r.Body).Decode(&trainer)
+		logrus.Info(trainer)
+		if err != nil {
+			logrus.Error(err)
+		}
+		insertResult, err := MongoDb3.InsertOne(r.Context(), trainer)
+		if err != nil {
+			logrus.Error(err)
+		}
+		json.NewEncoder(w).Encode(insertResult.InsertedID)
+		fmt.Println(r.Body)
+	}
+}
+
 //Handle Requests
 func HandleRequests() {
 	myRouter := mux.NewRouter().StrictSlash(true)
@@ -206,5 +232,6 @@ func HandleRequests() {
 	myRouter.HandleFunc("/whodatHard", whoIsDat)
 	myRouter.HandleFunc("/trainerList", returnTrainerList)
 	myRouter.HandleFunc("/trainer/{name}", returnSingleTrainer)
+	myRouter.HandleFunc("/createTrainer", returnCreateTrainer)
 	log.Fatal(http.ListenAndServe(":8082", myRouter))
 }

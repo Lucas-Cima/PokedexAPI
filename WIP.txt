@@ -1,0 +1,8 @@
+Form for pokemon html         
+            <label for="form">Choose Form(If Applicable)</label>
+            <select id="form" name="form">
+                <option value="nil">None</option>
+                <option value="Alolan">Alolan</option>
+                <option value="Galarian">Galarian</option>
+                <option value="Hisuian">Hisuian</option>
+            </select><br>
